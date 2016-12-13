@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "a2fc2fbc0dafeedf1e48c48e2e7d0a1a"
+build_time: [534889802, 338823000]
+inputs:
+  "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/SwiftyGraphDemo/ViewController.swift": [534888947, 0]
+  "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/SwiftyGraphDemo/AppDelegate.swift": [534888947, 0]

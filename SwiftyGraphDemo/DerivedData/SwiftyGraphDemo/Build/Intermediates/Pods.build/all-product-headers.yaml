@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/Pods_SwiftyGraphDemo.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-SwiftyGraphDemo-umbrella.h",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/Pods/Target Support Files/Pods-SwiftyGraphDemo/Pods-SwiftyGraphDemo-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_SwiftyGraphDemo-Swift.h",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/Pods_SwiftyGraphDemo.framework/Headers/Pods_SwiftyGraphDemo-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/Pods_SwiftyGraphDemo.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SwiftyGraphDemo.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

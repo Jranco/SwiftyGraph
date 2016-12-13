@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyGraph (0.1)
+
+DEPENDENCIES:
+  - SwiftyGraph (from `../SwiftyGraph`)
+
+EXTERNAL SOURCES:
+  SwiftyGraph:
+    :path: ../SwiftyGraph
+
+SPEC CHECKSUMS:
+  SwiftyGraph: d3ede86266ee6df9d5744ed56d9ea27637829266
+
+PODFILE CHECKSUM: 250b02825549e1af06fd0027142b8b3f7c316d3d
+
+COCOAPODS: 1.1.1
