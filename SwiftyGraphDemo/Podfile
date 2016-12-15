@@ -7,7 +7,7 @@ target 'SwiftyGraphDemo' do
 
   # Pods for SwiftyGraphDemo
 
-  pod ‘SwiftyGraph’, :path => '../SwiftyGraph'
+ pod ‘SwiftyGraph’, :path => '../SwiftyGraph'
 
   target 'SwiftyGraphDemoTests' do
     inherit! :search_paths

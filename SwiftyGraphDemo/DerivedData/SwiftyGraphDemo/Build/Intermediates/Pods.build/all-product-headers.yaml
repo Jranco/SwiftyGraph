@@ -28,6 +28,38 @@
           'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SwiftyGraphDemo.build/module.modulemap"
         }
       ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/SwiftyGraph/SwiftyGraph.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftyGraph-Swift.h",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/SwiftyGraph/SwiftyGraph.framework/Headers/SwiftyGraph-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftyGraph-umbrella.h",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/Pods/Target Support Files/SwiftyGraph/SwiftyGraph-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftyGraph.h",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraph/SwiftyGraph/SwiftyGraph.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/SwiftyGraph/SwiftyGraph.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftyGraph.build/module.modulemap"
+        }
+      ]
     }
   ]
 }

@@ -19,20 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyGraph.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14B62BD63CDA57680BA455F63F8BAF38</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>738F5452686FD2B09DA2A4F9A528415B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AC13F926998184A67D2A0F8CD983654C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B3F9605662E975A987C0F284574F1665</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D82ED33D1239012D6C2B7B35C17F083B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

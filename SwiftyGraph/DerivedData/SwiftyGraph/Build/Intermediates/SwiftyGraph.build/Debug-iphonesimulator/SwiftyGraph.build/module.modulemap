@@ -4,3 +4,7 @@ framework module SwiftyGraph {
   export *
   module * { export * }
 }
+
+module SwiftyGraph.Swift {
+    header "SwiftyGraph-Swift.h"
+}

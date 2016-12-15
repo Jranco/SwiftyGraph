@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E0QMhDzh22JAvkxue4sM12X904o=
+			qLrfE+jbB2FkhvXtJJeQ/JTPzHE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q4VXwE/NZ5lUS3aFaEphzqez5QY=
+			RVPyA1UpkIGqq+IUJfZCCurSLbk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dR+q002KUN92/OQT1cuLppMFr1g=
+			TUfD+yVmWz7AftU1tYA8+Xt82cM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,11 +53,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wYlG7D1OPbnv8UJ3a9vxlaJ8wJg=
+			cQQ+83YYtwubm3G3AUofToKywfM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/SwiftyGraph.framework/Info.plist</key>
+		<data>
+		TxNzgbImg7uHf1ROl1ngtMKFE4k=
+		</data>
+		<key>Frameworks/SwiftyGraph.framework/SwiftyGraph</key>
+		<data>
+		7E+NXhEgv/ewVSH1nJ3uDIycatI=
+		</data>
+		<key>Frameworks/SwiftyGraph.framework/_CodeSignature/CodeResources</key>
+		<data>
+		UfZ3ooNQmJBQ0NXrgSvvnseqA/w=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		LF41Uh0Sp4L1Z3yICK12sjRbUjs=
@@ -94,6 +106,10 @@
 		<data>
 		4sQ5ITCtBahH9Q58pH53rQ/5vfo=
 		</data>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<data>
+		vldKx1obUIzUVxftsutXtIWS5WM=
+		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
 		Ch5Swd1niGl65CQmnfDLQiZaxDA=
@@ -121,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E0QMhDzh22JAvkxue4sM12X904o=
+			qLrfE+jbB2FkhvXtJJeQ/JTPzHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			As0+9PeeOqY29qYhOmL6UgMZtfP23H86qgE8NCNDH1w=
+			XHEUyA9cv2CmrsBLzYzQLSbAz/SH9p/+/Zkx1BmXFhU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -147,11 +163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q4VXwE/NZ5lUS3aFaEphzqez5QY=
+			RVPyA1UpkIGqq+IUJfZCCurSLbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			g/+LNxw0e2s1QWyBUtyTsdFx9TlW8mEg3gn47pQWoBU=
+			SuedkOvmpEFO7mrUpEzFy/FcqhjK/ABIooYY/tddWrc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -160,11 +176,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dR+q002KUN92/OQT1cuLppMFr1g=
+			TUfD+yVmWz7AftU1tYA8+Xt82cM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fzJzXPGItotRe7Dt/e1re3HEqmjv4HvMxObeW2bplyo=
+			HYAVVRiz3dGiSHamYhNnmo4H00gAW5y5cscUEPUKYSk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -186,14 +202,47 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wYlG7D1OPbnv8UJ3a9vxlaJ8wJg=
+			cQQ+83YYtwubm3G3AUofToKywfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			iKluOpho1joaRmavft919m6PI/XY+GtYudQ5iCGjMaQ=
+			Z43Ea8iodjVyuOQdeYTgy5Wt+uXfa6AtU7VSO1R/o0I=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Frameworks/SwiftyGraph.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TxNzgbImg7uHf1ROl1ngtMKFE4k=
+			</data>
+			<key>hash2</key>
+			<data>
+			/vQbu2YUG8zdt7/J7AG9vgh92z9YoTIF3OxsMwKPnWw=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftyGraph.framework/SwiftyGraph</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7E+NXhEgv/ewVSH1nJ3uDIycatI=
+			</data>
+			<key>hash2</key>
+			<data>
+			AUcD8KEPFEPhX7/VGRryljk9QwbTjyNvaMfsdJjmSz0=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftyGraph.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UfZ3ooNQmJBQ0NXrgSvvnseqA/w=
+			</data>
+			<key>hash2</key>
+			<data>
+			EBVS4NZYB0AOW+gqX7EwiBiijrmdL4k8r3GJpLVwAeU=
+			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
@@ -292,6 +341,17 @@
 			<key>hash2</key>
 			<data>
 			5TNbgkrV4vReZbfZZ5TgmjRbWXS87koPZsuUJhlY60g=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vldKx1obUIzUVxftsutXtIWS5WM=
+			</data>
+			<key>hash2</key>
+			<data>
+			vdufHPIg7l6hyOShy3q+fL53rgk6Hu5Zcb3HjAbzf98=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>

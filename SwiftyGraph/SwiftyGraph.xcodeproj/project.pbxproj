@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90F34D81E02802200E76780 /* ttest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F34D71E02802200E76780 /* ttest.swift */; };
 		E90F4BB01DFF3C2A0095C28C /* SwiftyGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */; };
 		E90F4BB51DFF3C2A0095C28C /* SwiftyGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */; };
 		E90F4BB71DFF3C2A0095C28C /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9D1DED31E0217C400F34126 /* CategoryDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED01E0217C400F34126 /* CategoryDirection.swift */; };
+		E9D1DED41E0217C400F34126 /* CategoryWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED11E0217C400F34126 /* CategoryWeight.swift */; };
+		E9D1DED51E0217C400F34126 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED21E0217C400F34126 /* Edge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E90F34D71E02802200E76780 /* ttest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ttest.swift; sourceTree = "<group>"; };
 		E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGraph.h; sourceTree = "<group>"; };
 		E90F4BAA1DFF3C290095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90F4BAF1DFF3C2A0095C28C /* SwiftyGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGraphTests.swift; sourceTree = "<group>"; };
 		E90F4BB61DFF3C2A0095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D1DED01E0217C400F34126 /* CategoryDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDirection.swift; sourceTree = "<group>"; };
+		E9D1DED11E0217C400F34126 /* CategoryWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryWeight.swift; sourceTree = "<group>"; };
+		E9D1DED21E0217C400F34126 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,12 @@
 		E90F4BA81DFF3C290095C28C /* SwiftyGraph */ = {
 			isa = PBXGroup;
 			children = (
+				E9D1DED01E0217C400F34126 /* CategoryDirection.swift */,
+				E9D1DED11E0217C400F34126 /* CategoryWeight.swift */,
+				E9D1DED21E0217C400F34126 /* Edge.swift */,
 				E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */,
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
+				E90F34D71E02802200E76780 /* ttest.swift */,
 			);
 			path = SwiftyGraph;
 			sourceTree = "<group>";
@@ -149,6 +161,7 @@
 					E90F4BA51DFF3C290095C28C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = HUBMAYY26V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E90F4BAE1DFF3C2A0095C28C = {
@@ -198,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D1DED31E0217C400F34126 /* CategoryDirection.swift in Sources */,
+				E9D1DED41E0217C400F34126 /* CategoryWeight.swift in Sources */,
+				E90F34D81E02802200E76780 /* ttest.swift in Sources */,
+				E9D1DED51E0217C400F34126 /* Edge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +339,7 @@
 		E90F4BBB1DFF3C2A0095C28C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HUBMAYY26V;
@@ -334,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JrancoMobile.SwiftyGraph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +360,7 @@
 		E90F4BBC1DFF3C2A0095C28C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HUBMAYY26V;
@@ -360,6 +380,7 @@
 		E90F4BBE1DFF3C2A0095C28C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HUBMAYY26V;
 				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +393,7 @@
 		E90F4BBF1DFF3C2A0095C28C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HUBMAYY26V;
 				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +422,7 @@
 				E90F4BBC1DFF3C2A0095C28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E90F4BBD1DFF3C2A0095C28C /* Build configuration list for PBXNativeTarget "SwiftyGraphTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +431,7 @@
 				E90F4BBF1DFF3C2A0095C28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

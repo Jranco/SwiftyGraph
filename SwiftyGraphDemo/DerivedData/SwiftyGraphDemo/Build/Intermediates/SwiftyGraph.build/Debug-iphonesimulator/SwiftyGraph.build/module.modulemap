@@ -1,6 +1,0 @@
-framework module SwiftyGraph {
-  umbrella header "SwiftyGraph.h"
-
-  export *
-  module * { export * }
-}
