@@ -15,9 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let edge = Edge.weightedUndirected
+        let edge = Edge.Direction.directed
         
-        print ("direction: ", edge.direction)
+        print ("direction: ", edge)
         //print ("weight: ", edge.weight)
 
     }

@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 depends-top-level:
 - "UIViewController"
+- !private "StringLiteralType"
 - !private "Edge"
 - !private "print"
-- !private "StringLiteralType"
 - "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "Edge"]
@@ -27,7 +27,6 @@ depends-member:
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- ["O11SwiftyGraph17CategoryDirection", "deinit"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Edge"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -43,16 +42,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- ["O11SwiftyGraph4Edge", "deinit"]
-- !private ["O11SwiftyGraph4Edge", "direction"]
-- !private ["O11SwiftyGraph4Edge", "weightedUndirected"]
+- ["OO11SwiftyGraph4Edge9Direction", "deinit"]
+- !private ["OO11SwiftyGraph4Edge9Direction", "directed"]
+- !private ["O11SwiftyGraph4Edge", "Direction"]
 - !private ["Ps9Equatable", "Edge"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
-- !private ["Ps9Equatable", "direction"]
+- !private ["Ps9Equatable", "directed"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "viewDidLoad"]
-- !private ["Ps9Equatable", "weightedUndirected"]
 - ["Ps9Equatable", ""]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -60,11 +58,10 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "Edge"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps8Hashable", "direction"]
+- !private ["Ps8Hashable", "directed"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "viewDidLoad"]
-- !private ["Ps8Hashable", "weightedUndirected"]
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -162,23 +159,22 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Edge"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
-- !private ["Ps9_Hashable", "direction"]
+- !private ["Ps9_Hashable", "directed"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "viewDidLoad"]
-- !private ["Ps9_Hashable", "weightedUndirected"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Ps7CVarArg"
-- "O11SwiftyGraph17CategoryDirection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "O11SwiftyGraph4Edge"
+- "OO11SwiftyGraph4Edge9Direction"
+- !private "O11SwiftyGraph4Edge"
 - "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"

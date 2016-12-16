@@ -10,25 +10,54 @@ import Foundation
 
 public enum Edge
 {
-    case weightedUndirected
-    case unweightedUndirected
-    case weightedDirected
-    case unweightedDirected
+    public enum Direction
+    {
+        case directed
+        case undirected
+        
+        public init()
+        {
+            self = .directed
+        }
+        
+        public init(direction: Direction)
+        {
+            self = direction
+        }
+    }
+    
+    public enum Weight
+    {
+        case weighted
+        case unweighted
+        
+        public init()
+        {
+            self = .unweighted
+        }
+        
+        public init(weight: Weight)
+        {
+            self = weight
+        }
+    }
+    
+    case type(Weight, Direction)
 }
 
 public extension Edge
 {
-    var direction: CategoryDirection
-    {
-        switch self
-        {
-            case .weightedUndirected  : return .undirected
-            case .weightedDirected    : return .directed
-            case .unweightedDirected  : return .directed
-            case .unweightedUndirected: return .undirected
-            default : break
-        }
-    }
+//    var direction: CategoryDirection
+//    {
+//        switch self
+//        {
+//            case .weightedUndirected  : return .undirected
+//            case .weightedDirected    : return .directed
+//            case .unweightedDirected  : return .directed
+//            case .unweightedUndirected: return .undirected
+//            default : break
+//        }
+//    }
     
     // set init giving direction & weight params
 }
