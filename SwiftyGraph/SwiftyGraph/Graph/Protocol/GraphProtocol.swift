@@ -14,6 +14,8 @@ protocol GraphProtocol
     var vertices: [String: VerticeProtocol] {get}
     var direction: Direction {set get}
     
+    init(direction: Direction)
+    
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction, weight: Weight)
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction)
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)

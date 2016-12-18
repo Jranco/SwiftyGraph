@@ -13,20 +13,15 @@ public class GraphBase: GraphProtocol
     var adjDictionary: [String: [String:EdgeProtocol]] = [:]
     var vertices: [String: VerticeProtocol] = [:]
     public internal(set) var direction: Direction = .directed
+    
+    required public init(direction: Direction)
+    {
+        self.direction = direction
+    }
 }
 
 extension GraphBase
 {
-//    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight)
-//    {
-//        addEdge(origin: origin, destination: destination, direction: self.direction, weight: weight)
-//    }
-//    
-//    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
-//    {
-//        addEdge(origin: origin, destination: destination, direction: self.direction)
-//    }
-    
     public func printGraph()
     {
         for (vId, nearby) in adjDictionary
