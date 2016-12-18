@@ -22,29 +22,3 @@ protocol GraphProtocol
     func addVertice(vertice: VerticeProtocol)
 }
 
-
-protocol GraphWeightedProtocol: GraphProtocol
-{
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight)
-}
-
-extension GraphWeightedProtocol
-{
-    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight)
-    {
-        addEdge(origin: origin, destination: destination, direction: self.direction, weight: weight)
-    }
-}
-
-protocol GraphUnweightedProtocol: GraphProtocol
-{
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
-}
-
-extension GraphUnweightedProtocol
-{
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
-    {
-        addEdge(origin: origin, destination: destination, direction: self.direction)
-    }
-}

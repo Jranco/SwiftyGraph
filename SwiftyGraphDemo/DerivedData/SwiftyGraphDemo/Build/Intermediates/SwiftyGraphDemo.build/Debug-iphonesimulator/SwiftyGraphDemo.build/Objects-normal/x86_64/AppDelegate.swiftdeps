@@ -9,18 +9,18 @@ provides-dynamic-lookup:
 - "applicationWillEnterForeground"
 - "application"
 - "applicationDidEnterBackground"
-- "applicationWillResignActive"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
+- "applicationWillResignActive"
 - "window"
+- "applicationWillTerminate"
 depends-top-level:
-- "UIApplication"
 - "Bool"
+- !private "BooleanLiteralType"
 - "UIWindow"
-- "AppDelegate"
+- "UIApplication"
 - "UIApplicationLaunchOptionsKey"
 - "UIResponder"
-- !private "BooleanLiteralType"
+- "AppDelegate"
 - "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]

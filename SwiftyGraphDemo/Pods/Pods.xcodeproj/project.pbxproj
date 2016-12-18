@@ -31,6 +31,8 @@
 		E98ACAFF1E07384500C5C41F /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFA1E07384500C5C41F /* GraphUnweighted.swift */; };
 		E98ACB001E07384500C5C41F /* GraphWeighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFB1E07384500C5C41F /* GraphWeighted.swift */; };
 		E98ACB011E07384500C5C41F /* GraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */; };
+		E98ACB031E074BDF00C5C41F /* GraphWeightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACB021E074BDF00C5C41F /* GraphWeightedProtocol.swift */; };
+		E98ACB051E074BFF00C5C41F /* GraphUnweightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACB041E074BFF00C5C41F /* GraphUnweightedProtocol.swift */; };
 		EC656F9ED0393A3819EE90FF58D002BA /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B8007D2E3C5276D429CAA4E1E1813B /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED6F136310141FA3F21721D294A99EF0 /* Pods-SwiftyGraphDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0113D1F9F3EF0779AF1A97352C0C1AA /* Pods-SwiftyGraphDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		E98ACAFA1E07384500C5C41F /* GraphUnweighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweighted.swift; sourceTree = "<group>"; };
 		E98ACAFB1E07384500C5C41F /* GraphWeighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeighted.swift; sourceTree = "<group>"; };
 		E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphProtocol.swift; sourceTree = "<group>"; };
+		E98ACB021E074BDF00C5C41F /* GraphWeightedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeightedProtocol.swift; sourceTree = "<group>"; };
+		E98ACB041E074BFF00C5C41F /* GraphUnweightedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweightedProtocol.swift; sourceTree = "<group>"; };
 		EC83239F0C0110236D557605240DE02C /* Pods-SwiftyGraphDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyGraphDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ED349129F9EA0C7493332709800F053A /* SwiftyGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGraph-umbrella.h"; sourceTree = "<group>"; };
 		EECADDFF844C96FD40CEB0E7562D6FF7 /* Pods-SwiftyGraphDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyGraphDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */,
+				E98ACB021E074BDF00C5C41F /* GraphWeightedProtocol.swift */,
+				E98ACB041E074BFF00C5C41F /* GraphUnweightedProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -509,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98ACB051E074BFF00C5C41F /* GraphUnweightedProtocol.swift in Sources */,
 				E98ACB001E07384500C5C41F /* GraphWeighted.swift in Sources */,
 				E98ACAFE1E07384500C5C41F /* GraphBase.swift in Sources */,
 				163A57194100DA43402FC2F4F2512DBD /* Direction.swift in Sources */,
@@ -517,6 +524,7 @@
 				DF6230FA7657682233FC50404F7DC6DB /* EdgeProtocol.swift in Sources */,
 				E98ACB011E07384500C5C41F /* GraphProtocol.swift in Sources */,
 				48C7214638101B891B1B2F4B065F41FC /* SwiftyGraph-dummy.m in Sources */,
+				E98ACB031E074BDF00C5C41F /* GraphWeightedProtocol.swift in Sources */,
 				683DD21665A62245D0FEB5B756D55C83 /* ttest.swift in Sources */,
 				8A82BE46701052CB31E6B9341B244E31 /* Vertice.swift in Sources */,
 				AAA2EF45A96C05903CD0B9F772F527E0 /* VerticeBody.swift in Sources */,
