@@ -11,9 +11,18 @@
 		E90F4BB01DFF3C2A0095C28C /* SwiftyGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */; };
 		E90F4BB51DFF3C2A0095C28C /* SwiftyGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */; };
 		E90F4BB71DFF3C2A0095C28C /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9D1DED31E0217C400F34126 /* CategoryDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED01E0217C400F34126 /* CategoryDirection.swift */; };
-		E9D1DED41E0217C400F34126 /* CategoryWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED11E0217C400F34126 /* CategoryWeight.swift */; };
-		E9D1DED51E0217C400F34126 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1DED21E0217C400F34126 /* Edge.swift */; };
+		E96B9B141E06A0FE00F9E1E1 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B0A1E06A0FE00F9E1E1 /* Edge.swift */; };
+		E96B9B151E06A0FE00F9E1E1 /* EdgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B0B1E06A0FE00F9E1E1 /* EdgeProtocol.swift */; };
+		E96B9B161E06A0FE00F9E1E1 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B0C1E06A0FE00F9E1E1 /* Weight.swift */; };
+		E96B9B191E06A0FE00F9E1E1 /* Vertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B111E06A0FE00F9E1E1 /* Vertice.swift */; };
+		E96B9B1A1E06A0FE00F9E1E1 /* VerticeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B121E06A0FE00F9E1E1 /* VerticeBody.swift */; };
+		E96B9B1B1E06A0FE00F9E1E1 /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B9B131E06A0FE00F9E1E1 /* VerticeProtocol.swift */; };
+		E98ACAF11E072FBA00C5C41F /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAEB1E072FBA00C5C41F /* Direction.swift */; };
+		E98ACAF21E072FBA00C5C41F /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAEC1E072FBA00C5C41F /* GraphBase.swift */; };
+		E98ACAF31E072FBA00C5C41F /* GraphDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAED1E072FBA00C5C41F /* GraphDefault.swift */; };
+		E98ACAF41E072FBA00C5C41F /* GraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAEE1E072FBA00C5C41F /* GraphProtocol.swift */; };
+		E98ACAF51E072FBA00C5C41F /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAEF1E072FBA00C5C41F /* GraphUnweighted.swift */; };
+		E98ACAF61E072FBA00C5C41F /* GraphWeighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAF01E072FBA00C5C41F /* GraphWeighted.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,18 @@
 		E90F4BAF1DFF3C2A0095C28C /* SwiftyGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGraphTests.swift; sourceTree = "<group>"; };
 		E90F4BB61DFF3C2A0095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9D1DED01E0217C400F34126 /* CategoryDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDirection.swift; sourceTree = "<group>"; };
-		E9D1DED11E0217C400F34126 /* CategoryWeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryWeight.swift; sourceTree = "<group>"; };
-		E9D1DED21E0217C400F34126 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		E96B9B0A1E06A0FE00F9E1E1 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		E96B9B0B1E06A0FE00F9E1E1 /* EdgeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeProtocol.swift; sourceTree = "<group>"; };
+		E96B9B0C1E06A0FE00F9E1E1 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		E96B9B111E06A0FE00F9E1E1 /* Vertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertice.swift; sourceTree = "<group>"; };
+		E96B9B121E06A0FE00F9E1E1 /* VerticeBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeBody.swift; sourceTree = "<group>"; };
+		E96B9B131E06A0FE00F9E1E1 /* VerticeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeProtocol.swift; sourceTree = "<group>"; };
+		E98ACAEB1E072FBA00C5C41F /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		E98ACAEC1E072FBA00C5C41F /* GraphBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
+		E98ACAED1E072FBA00C5C41F /* GraphDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDefault.swift; sourceTree = "<group>"; };
+		E98ACAEE1E072FBA00C5C41F /* GraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphProtocol.swift; sourceTree = "<group>"; };
+		E98ACAEF1E072FBA00C5C41F /* GraphUnweighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweighted.swift; sourceTree = "<group>"; };
+		E98ACAF01E072FBA00C5C41F /* GraphWeighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeighted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +97,9 @@
 		E90F4BA81DFF3C290095C28C /* SwiftyGraph */ = {
 			isa = PBXGroup;
 			children = (
-				E9D1DED01E0217C400F34126 /* CategoryDirection.swift */,
-				E9D1DED11E0217C400F34126 /* CategoryWeight.swift */,
-				E9D1DED21E0217C400F34126 /* Edge.swift */,
+				E98ACAE91E072FBA00C5C41F /* Graph */,
+				E96B9B091E06A0FE00F9E1E1 /* Edge */,
+				E96B9B101E06A0FE00F9E1E1 /* Vertice */,
 				E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */,
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
 				E90F34D71E02802200E76780 /* ttest.swift */,
@@ -96,6 +114,47 @@
 				E90F4BB61DFF3C2A0095C28C /* Info.plist */,
 			);
 			path = SwiftyGraphTests;
+			sourceTree = "<group>";
+		};
+		E96B9B091E06A0FE00F9E1E1 /* Edge */ = {
+			isa = PBXGroup;
+			children = (
+				E96B9B0A1E06A0FE00F9E1E1 /* Edge.swift */,
+				E96B9B0B1E06A0FE00F9E1E1 /* EdgeProtocol.swift */,
+				E96B9B0C1E06A0FE00F9E1E1 /* Weight.swift */,
+			);
+			path = Edge;
+			sourceTree = "<group>";
+		};
+		E96B9B101E06A0FE00F9E1E1 /* Vertice */ = {
+			isa = PBXGroup;
+			children = (
+				E96B9B111E06A0FE00F9E1E1 /* Vertice.swift */,
+				E96B9B121E06A0FE00F9E1E1 /* VerticeBody.swift */,
+				E96B9B131E06A0FE00F9E1E1 /* VerticeProtocol.swift */,
+			);
+			path = Vertice;
+			sourceTree = "<group>";
+		};
+		E98ACAE91E072FBA00C5C41F /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				E98ACAEA1E072FBA00C5C41F /* Direction */,
+				E98ACAEC1E072FBA00C5C41F /* GraphBase.swift */,
+				E98ACAED1E072FBA00C5C41F /* GraphDefault.swift */,
+				E98ACAEE1E072FBA00C5C41F /* GraphProtocol.swift */,
+				E98ACAEF1E072FBA00C5C41F /* GraphUnweighted.swift */,
+				E98ACAF01E072FBA00C5C41F /* GraphWeighted.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		E98ACAEA1E072FBA00C5C41F /* Direction */ = {
+			isa = PBXGroup;
+			children = (
+				E98ACAEB1E072FBA00C5C41F /* Direction.swift */,
+			);
+			path = Direction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +270,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D1DED31E0217C400F34126 /* CategoryDirection.swift in Sources */,
-				E9D1DED41E0217C400F34126 /* CategoryWeight.swift in Sources */,
+				E98ACAF61E072FBA00C5C41F /* GraphWeighted.swift in Sources */,
+				E96B9B151E06A0FE00F9E1E1 /* EdgeProtocol.swift in Sources */,
+				E98ACAF41E072FBA00C5C41F /* GraphProtocol.swift in Sources */,
+				E98ACAF51E072FBA00C5C41F /* GraphUnweighted.swift in Sources */,
+				E96B9B1B1E06A0FE00F9E1E1 /* VerticeProtocol.swift in Sources */,
+				E98ACAF31E072FBA00C5C41F /* GraphDefault.swift in Sources */,
+				E96B9B141E06A0FE00F9E1E1 /* Edge.swift in Sources */,
+				E98ACAF21E072FBA00C5C41F /* GraphBase.swift in Sources */,
+				E98ACAF11E072FBA00C5C41F /* Direction.swift in Sources */,
+				E96B9B1A1E06A0FE00F9E1E1 /* VerticeBody.swift in Sources */,
 				E90F34D81E02802200E76780 /* ttest.swift in Sources */,
-				E9D1DED51E0217C400F34126 /* Edge.swift in Sources */,
+				E96B9B161E06A0FE00F9E1E1 /* Weight.swift in Sources */,
+				E96B9B191E06A0FE00F9E1E1 /* Vertice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
