@@ -7,15 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2AFFDB0E744937FD2F79AD97A23057 /* GraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA4F9F12AD90938BAEBCEBA8B18276 /* GraphProtocol.swift */; };
 		163A57194100DA43402FC2F4F2512DBD /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE129AD06901D255D95324A78F64D1B /* Direction.swift */; };
-		1C45BC8E65A8C3C964455F4281326BFD /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF0F9EC268FC070D086F84624AA73F8 /* GraphBase.swift */; };
 		2084E728F50166280EE8FE1523692628 /* SwiftyGraph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED349129F9EA0C7493332709800F053A /* SwiftyGraph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		219306DA2238F203FC2987C4FA6214DE /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A45941C7068DC8FD05F8035E94FC5 /* VerticeProtocol.swift */; };
-		247C5A1618D9292F7C1BA1937A7E4B26 /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844F34A8256640DF21CD9D371F82D4C /* GraphUnweighted.swift */; };
 		4500BB2C76177BA8C2232F6B0BBFEDC1 /* Pods-SwiftyGraphDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 044B5A2586DDB05173A73EE813BF11FE /* Pods-SwiftyGraphDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48C7214638101B891B1B2F4B065F41FC /* SwiftyGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BE1BDC6ECCAE76AEDDFA8A62B1C408 /* SwiftyGraph-dummy.m */; };
-		4D48BEBAEA790E9A289DBD48D2952D0B /* GraphDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B406D8D5FB477FEEB53B47AFFC4003B7 /* GraphDefault.swift */; };
 		52BD02B72F8BD4707BD7511A0C81DB93 /* Pods-SwiftyGraphDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77C474E19B0D8791298E1F0FD7CD6A0 /* Pods-SwiftyGraphDemoTests-dummy.m */; };
 		683DD21665A62245D0FEB5B756D55C83 /* ttest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F324A25B704D74C97804AC3E5BC85 /* ttest.swift */; };
 		6B21FAF14D8A3C4F443D1B4C539847C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -29,9 +25,12 @@
 		AAA2EF45A96C05903CD0B9F772F527E0 /* VerticeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9542EABF53618299398394D356C37 /* VerticeBody.swift */; };
 		AC75C07A96ECBC691770759EF817F0A7 /* Pods-SwiftyGraphDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FAB4794056FA0670027A5DDFD580E /* Pods-SwiftyGraphDemo-dummy.m */; };
 		C8857BA5912C535DB7FDF054C26ED06F /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1430FCE58313FC23CC1C55FF95325 /* Edge.swift */; };
-		CB6C3024500E26348E8B22088F782E76 /* GraphWeighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05969E5758AF9DDA651B80CA8E98D809 /* GraphWeighted.swift */; };
 		CE24C58550F653A57D33A294A4ADEAAE /* Pods-SwiftyGraphDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9952D07CAAC35469AACF05D3CF8F541 /* Pods-SwiftyGraphDemoUITests-dummy.m */; };
 		DF6230FA7657682233FC50404F7DC6DB /* EdgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B85D4EDAF17285626D35834F5A3A7 /* EdgeProtocol.swift */; };
+		E98ACAFE1E07384500C5C41F /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAF81E07384500C5C41F /* GraphBase.swift */; };
+		E98ACAFF1E07384500C5C41F /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFA1E07384500C5C41F /* GraphUnweighted.swift */; };
+		E98ACB001E07384500C5C41F /* GraphWeighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFB1E07384500C5C41F /* GraphWeighted.swift */; };
+		E98ACB011E07384500C5C41F /* GraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */; };
 		EC656F9ED0393A3819EE90FF58D002BA /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B8007D2E3C5276D429CAA4E1E1813B /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED6F136310141FA3F21721D294A99EF0 /* Pods-SwiftyGraphDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0113D1F9F3EF0779AF1A97352C0C1AA /* Pods-SwiftyGraphDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -49,16 +48,13 @@
 /* Begin PBXFileReference section */
 		011EC553CF66537E43A396A1CE5B4351 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044B5A2586DDB05173A73EE813BF11FE /* Pods-SwiftyGraphDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyGraphDemo-umbrella.h"; sourceTree = "<group>"; };
-		05969E5758AF9DDA651B80CA8E98D809 /* GraphWeighted.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphWeighted.swift; sourceTree = "<group>"; };
 		08B7F5F674C37BBB39D398CDCC06F1AA /* WeightProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeightProtocol.swift; sourceTree = "<group>"; };
 		16982B627D8F3E5B5D3B26A97972A73F /* Pods-SwiftyGraphDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyGraphDemo.modulemap"; sourceTree = "<group>"; };
 		17BC285A90799721AE583F8035631184 /* Vertice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vertice.swift; sourceTree = "<group>"; };
-		1844F34A8256640DF21CD9D371F82D4C /* GraphUnweighted.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphUnweighted.swift; sourceTree = "<group>"; };
 		2BFA6212C2DD865F375C3B7C68C6FE49 /* Pods-SwiftyGraphDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyGraphDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		36DCFE65A0D2B1BA1282C887DB1DCDD4 /* Pods-SwiftyGraphDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyGraphDemo-frameworks.sh"; sourceTree = "<group>"; };
 		385F324A25B704D74C97804AC3E5BC85 /* ttest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ttest.swift; sourceTree = "<group>"; };
 		3B8C3CBAD529F1E78E10EE6D99973265 /* Pods_SwiftyGraphDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyGraphDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DBA4F9F12AD90938BAEBCEBA8B18276 /* GraphProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphProtocol.swift; sourceTree = "<group>"; };
 		40A32A090A7EFEDD97E7D56B11EAD7AE /* SwiftyGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGraph-prefix.pch"; sourceTree = "<group>"; };
 		426FAB4794056FA0670027A5DDFD580E /* Pods-SwiftyGraphDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyGraphDemo-dummy.m"; sourceTree = "<group>"; };
 		44F2CB98C0148E8CA4B7AE90CC3E2388 /* Pods-SwiftyGraphDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyGraphDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +80,6 @@
 		ABA2A5CE841ECA6B1F468B0B976DA57C /* Pods-SwiftyGraphDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyGraphDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		ADD9EBF6A2246C767344909B1C2A6A44 /* Pods-SwiftyGraphDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyGraphDemo-resources.sh"; sourceTree = "<group>"; };
 		AFA790F262E7192BCDBD44AB48980093 /* Pods_SwiftyGraphDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyGraphDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B406D8D5FB477FEEB53B47AFFC4003B7 /* GraphDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphDefault.swift; sourceTree = "<group>"; };
 		BDEDC8CB791C6FD1380A30E6E7707B17 /* Pods-SwiftyGraphDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyGraphDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BEF9542EABF53618299398394D356C37 /* VerticeBody.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VerticeBody.swift; sourceTree = "<group>"; };
 		CB3D92E77D5B44BF6A6A4A6DEABA2DB7 /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +91,10 @@
 		D41E3233B21F3CD9BA1062FCA9D3E0A3 /* Pods-SwiftyGraphDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftyGraphDemoTests.modulemap"; sourceTree = "<group>"; };
 		D77C474E19B0D8791298E1F0FD7CD6A0 /* Pods-SwiftyGraphDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyGraphDemoTests-dummy.m"; sourceTree = "<group>"; };
 		DAE129AD06901D255D95324A78F64D1B /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		E98ACAF81E07384500C5C41F /* GraphBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
+		E98ACAFA1E07384500C5C41F /* GraphUnweighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweighted.swift; sourceTree = "<group>"; };
+		E98ACAFB1E07384500C5C41F /* GraphWeighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeighted.swift; sourceTree = "<group>"; };
+		E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphProtocol.swift; sourceTree = "<group>"; };
 		EC83239F0C0110236D557605240DE02C /* Pods-SwiftyGraphDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyGraphDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ED349129F9EA0C7493332709800F053A /* SwiftyGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGraph-umbrella.h"; sourceTree = "<group>"; };
 		EECADDFF844C96FD40CEB0E7562D6FF7 /* Pods-SwiftyGraphDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyGraphDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 		F640E52F56AC5078089DC297AC0F988A /* Pods-SwiftyGraphDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyGraphDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F9075B72D1DC2311D0FD4E4CBB321E54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9BE1BDC6ECCAE76AEDDFA8A62B1C408 /* SwiftyGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGraph-dummy.m"; sourceTree = "<group>"; };
-		FEF0F9EC268FC070D086F84624AA73F8 /* GraphBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,11 +276,9 @@
 		D628BC18B7F01C015A125CF694F151D5 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
-				FEF0F9EC268FC070D086F84624AA73F8 /* GraphBase.swift */,
-				B406D8D5FB477FEEB53B47AFFC4003B7 /* GraphDefault.swift */,
-				3DBA4F9F12AD90938BAEBCEBA8B18276 /* GraphProtocol.swift */,
-				1844F34A8256640DF21CD9D371F82D4C /* GraphUnweighted.swift */,
-				05969E5758AF9DDA651B80CA8E98D809 /* GraphWeighted.swift */,
+				E98ACAF71E07384500C5C41F /* Base Graph */,
+				E98ACAF91E07384500C5C41F /* Inherited Graphs */,
+				E98ACAFC1E07384500C5C41F /* Protocol */,
 				F0BA6853E822C9F22F375861F79F2DBA /* Direction */,
 			);
 			path = Graph;
@@ -296,6 +292,31 @@
 				A74A45941C7068DC8FD05F8035E94FC5 /* VerticeProtocol.swift */,
 			);
 			path = Vertice;
+			sourceTree = "<group>";
+		};
+		E98ACAF71E07384500C5C41F /* Base Graph */ = {
+			isa = PBXGroup;
+			children = (
+				E98ACAF81E07384500C5C41F /* GraphBase.swift */,
+			);
+			path = "Base Graph";
+			sourceTree = "<group>";
+		};
+		E98ACAF91E07384500C5C41F /* Inherited Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				E98ACAFA1E07384500C5C41F /* GraphUnweighted.swift */,
+				E98ACAFB1E07384500C5C41F /* GraphWeighted.swift */,
+			);
+			path = "Inherited Graphs";
+			sourceTree = "<group>";
+		};
+		E98ACAFC1E07384500C5C41F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E98ACAFD1E07384500C5C41F /* GraphProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		ECDA32E584D254DA8A4E26F96508AFC0 /* Support Files */ = {
@@ -488,14 +509,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98ACB001E07384500C5C41F /* GraphWeighted.swift in Sources */,
+				E98ACAFE1E07384500C5C41F /* GraphBase.swift in Sources */,
 				163A57194100DA43402FC2F4F2512DBD /* Direction.swift in Sources */,
+				E98ACAFF1E07384500C5C41F /* GraphUnweighted.swift in Sources */,
 				C8857BA5912C535DB7FDF054C26ED06F /* Edge.swift in Sources */,
 				DF6230FA7657682233FC50404F7DC6DB /* EdgeProtocol.swift in Sources */,
-				1C45BC8E65A8C3C964455F4281326BFD /* GraphBase.swift in Sources */,
-				4D48BEBAEA790E9A289DBD48D2952D0B /* GraphDefault.swift in Sources */,
-				0B2AFFDB0E744937FD2F79AD97A23057 /* GraphProtocol.swift in Sources */,
-				247C5A1618D9292F7C1BA1937A7E4B26 /* GraphUnweighted.swift in Sources */,
-				CB6C3024500E26348E8B22088F782E76 /* GraphWeighted.swift in Sources */,
+				E98ACB011E07384500C5C41F /* GraphProtocol.swift in Sources */,
 				48C7214638101B891B1B2F4B065F41FC /* SwiftyGraph-dummy.m in Sources */,
 				683DD21665A62245D0FEB5B756D55C83 /* ttest.swift in Sources */,
 				8A82BE46701052CB31E6B9341B244E31 /* Vertice.swift in Sources */,

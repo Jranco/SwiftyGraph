@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C15SwiftyGraphDemo14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "ViewController"
+- !private "Weight"
 - !private "Vertice"
 - !private "StringLiteralType"
-- !private "Weight"
-- "UIViewController"
 - !private "GraphWeighted"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "GraphWeighted"]
 - !private ["Ps9AnyObject", "Vertice"]
