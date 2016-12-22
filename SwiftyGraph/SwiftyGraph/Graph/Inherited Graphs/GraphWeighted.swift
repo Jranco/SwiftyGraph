@@ -10,7 +10,7 @@ import Foundation
 
 public class GraphWeighted: GraphBase, GraphWeightedProtocol
 {
-    public required init(direction: Direction)
+    public required init(direction: DirectionType)
     {
         super.init(direction: direction)
     }

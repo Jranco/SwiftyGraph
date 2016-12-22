@@ -12,12 +12,12 @@ protocol GraphProtocol
 {
     var adjDictionary: [String: [String:EdgeProtocol]] {get}
     var vertices: [String: VerticeProtocol] {get}
-    var direction: Direction {set get}
+    var direction: DirectionType {set get}
     
-    init(direction: Direction)
+    init(direction: DirectionType)
     
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction, weight: Weight)
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction)
+    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight)
+    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType)
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
     func addVertice(vertice: VerticeProtocol)
 }

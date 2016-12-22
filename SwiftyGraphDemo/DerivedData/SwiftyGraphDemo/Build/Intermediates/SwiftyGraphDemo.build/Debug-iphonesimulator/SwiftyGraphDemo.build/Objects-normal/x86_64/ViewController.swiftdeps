@@ -9,13 +9,15 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 depends-top-level:
+- !private "Weight"
+- "UIViewController"
+- !private "GraphUnweighted"
+- !private "GraphWeighted"
+- !private "StringLiteralType"
 - !private "Vertice"
 - "ViewController"
-- !private "Weight"
-- !private "GraphWeighted"
-- "UIViewController"
-- !private "StringLiteralType"
 depends-member:
+- !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]
 - !private ["Ps9AnyObject", "Vertice"]
 - !private ["Ps9AnyObject", "Weight"]
@@ -25,6 +27,7 @@ depends-member:
 - !private ["Ps9AnyObject", "printGraph"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "GraphUnweighted"]
 - !private ["Ps7CVarArg", "GraphWeighted"]
 - !private ["Ps7CVarArg", "Vertice"]
 - !private ["Ps7CVarArg", "Weight"]
@@ -33,6 +36,7 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "GraphUnweighted"]
 - !private ["Ps28CustomDebugStringConvertible", "GraphWeighted"]
 - !private ["Ps28CustomDebugStringConvertible", "Vertice"]
 - !private ["Ps28CustomDebugStringConvertible", "Weight"]
@@ -42,6 +46,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "GraphUnweighted"]
 - !private ["Ps23CustomStringConvertible", "GraphWeighted"]
 - !private ["Ps23CustomStringConvertible", "Vertice"]
 - !private ["Ps23CustomStringConvertible", "Weight"]
@@ -49,8 +54,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- ["O11SwiftyGraph9Direction", "deinit"]
-- !private ["O11SwiftyGraph9Direction", "directed"]
+- ["O11SwiftyGraph13DirectionType", "deinit"]
+- !private ["O11SwiftyGraph13DirectionType", "directed"]
+- !private ["Ps9Equatable", "GraphUnweighted"]
 - !private ["Ps9Equatable", "GraphWeighted"]
 - !private ["Ps9Equatable", "Vertice"]
 - !private ["Ps9Equatable", "Weight"]
@@ -69,13 +75,19 @@ depends-member:
 - !private ["P11SwiftyGraph13GraphProtocol", "addEdge"]
 - !private ["P11SwiftyGraph13GraphProtocol", "init"]
 - !private ["P11SwiftyGraph13GraphProtocol", "printGraph"]
+- !private ["C11SwiftyGraph15GraphUnweighted", "addEdge"]
+- ["C11SwiftyGraph15GraphUnweighted", "deinit"]
+- !private ["C11SwiftyGraph15GraphUnweighted", "init"]
+- !private ["C11SwiftyGraph15GraphUnweighted", "printGraph"]
+- !private ["P11SwiftyGraph23GraphUnweightedProtocol", "addEdge"]
+- !private ["P11SwiftyGraph23GraphUnweightedProtocol", "init"]
+- !private ["P11SwiftyGraph23GraphUnweightedProtocol", "printGraph"]
 - !private ["C11SwiftyGraph13GraphWeighted", "addEdge"]
 - ["C11SwiftyGraph13GraphWeighted", "deinit"]
 - !private ["C11SwiftyGraph13GraphWeighted", "init"]
-- !private ["C11SwiftyGraph13GraphWeighted", "printGraph"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "addEdge"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "init"]
-- !private ["P11SwiftyGraph21GraphWeightedProtocol", "printGraph"]
+- !private ["Ps8Hashable", "GraphUnweighted"]
 - !private ["Ps8Hashable", "GraphWeighted"]
 - !private ["Ps8Hashable", "Vertice"]
 - !private ["Ps8Hashable", "Weight"]
@@ -88,6 +100,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "GraphUnweighted"]
 - !private ["PSo8NSCoding", "GraphWeighted"]
 - !private ["PSo8NSCoding", "Vertice"]
 - !private ["PSo8NSCoding", "Weight"]
@@ -96,6 +109,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "GraphUnweighted"]
 - !private ["PSo26NSExtensionRequestHandling", "GraphWeighted"]
 - !private ["PSo26NSExtensionRequestHandling", "Vertice"]
 - !private ["PSo26NSExtensionRequestHandling", "Weight"]
@@ -104,12 +118,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "GraphUnweighted"]
 - !private ["CSo8NSObject", "GraphWeighted"]
 - !private ["CSo8NSObject", "Vertice"]
 - !private ["CSo8NSObject", "Weight"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "GraphUnweighted"]
 - !private ["PSo16NSObjectProtocol", "GraphWeighted"]
 - !private ["PSo16NSObjectProtocol", "Vertice"]
 - !private ["PSo16NSObjectProtocol", "Weight"]
@@ -124,6 +140,7 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIAppearanceContainer", "GraphUnweighted"]
 - !private ["PSo21UIAppearanceContainer", "GraphWeighted"]
 - !private ["PSo21UIAppearanceContainer", "Vertice"]
 - !private ["PSo21UIAppearanceContainer", "Weight"]
@@ -131,6 +148,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "GraphUnweighted"]
 - !private ["PSo18UIContentContainer", "GraphWeighted"]
 - !private ["PSo18UIContentContainer", "Vertice"]
 - !private ["PSo18UIContentContainer", "Weight"]
@@ -138,6 +156,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "GraphUnweighted"]
 - !private ["PSo18UIFocusEnvironment", "GraphWeighted"]
 - !private ["PSo18UIFocusEnvironment", "Vertice"]
 - !private ["PSo18UIFocusEnvironment", "Weight"]
@@ -145,12 +164,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "GraphUnweighted"]
 - !private ["CSo11UIResponder", "GraphWeighted"]
 - !private ["CSo11UIResponder", "Vertice"]
 - !private ["CSo11UIResponder", "Weight"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "GraphUnweighted"]
 - !private ["PSo30UIResponderStandardEditActions", "GraphWeighted"]
 - !private ["PSo30UIResponderStandardEditActions", "Vertice"]
 - !private ["PSo30UIResponderStandardEditActions", "Weight"]
@@ -158,6 +179,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "GraphUnweighted"]
 - !private ["PSo16UIStateRestoring", "GraphWeighted"]
 - !private ["PSo16UIStateRestoring", "Vertice"]
 - !private ["PSo16UIStateRestoring", "Weight"]
@@ -165,6 +187,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "GraphUnweighted"]
 - !private ["PSo18UITraitEnvironment", "GraphWeighted"]
 - !private ["PSo18UITraitEnvironment", "Vertice"]
 - !private ["PSo18UITraitEnvironment", "Weight"]
@@ -172,6 +195,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "GraphUnweighted"]
 - !private ["CSo16UIViewController", "GraphWeighted"]
 - !private ["CSo16UIViewController", "Vertice"]
 - !private ["CSo16UIViewController", "Weight"]
@@ -183,6 +207,7 @@ depends-member:
 - ["O11SwiftyGraph7Vertice", "deinit"]
 - !private ["O11SwiftyGraph7Vertice", "vDefault"]
 - !private ["P11SwiftyGraph15VerticeProtocol", "vDefault"]
+- !private ["C15SwiftyGraphDemo14ViewController", "GraphUnweighted"]
 - !private ["C15SwiftyGraphDemo14ViewController", "GraphWeighted"]
 - !private ["C15SwiftyGraphDemo14ViewController", "Vertice"]
 - !private ["C15SwiftyGraphDemo14ViewController", "Weight"]
@@ -191,13 +216,14 @@ depends-member:
 - ["C15SwiftyGraphDemo14ViewController", "init"]
 - ["C15SwiftyGraphDemo14ViewController", "viewDidLoad"]
 - ["O11SwiftyGraph6Weight", "deinit"]
-- !private ["O11SwiftyGraph6Weight", "wDefault"]
-- !private ["P11SwiftyGraph14WeightProtocol", "wDefault"]
+- !private ["O11SwiftyGraph6Weight", "weightDefault"]
+- !private ["P11SwiftyGraph14WeightProtocol", "weightDefault"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "GraphUnweighted"]
 - !private ["Ps9_Hashable", "GraphWeighted"]
 - !private ["Ps9_Hashable", "Vertice"]
 - !private ["Ps9_Hashable", "Weight"]
@@ -215,7 +241,7 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "O11SwiftyGraph9Direction"
+- "O11SwiftyGraph13DirectionType"
 - "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
@@ -223,6 +249,8 @@ depends-nominal:
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "C11SwiftyGraph9GraphBase"
 - !private "P11SwiftyGraph13GraphProtocol"
+- "C11SwiftyGraph15GraphUnweighted"
+- !private "P11SwiftyGraph23GraphUnweightedProtocol"
 - "C11SwiftyGraph13GraphWeighted"
 - !private "P11SwiftyGraph21GraphWeightedProtocol"
 - "Ps8Hashable"

@@ -8,34 +8,35 @@
 
 import Foundation
 
-enum SwiftyGraphType
+public enum SwiftyGraphType
 {
-    case graph(Weight, Direction)
+    case graph(WeightType, DirectionType)
 //    case graph(Direction)
 
 }
 
-struct SwiftyGraph
+public struct SwiftyGraph
 {
-//    func graph(with type: SwiftyGraphType) -> GraphProtocol
-//    {
-//        switch type
-//        {
-//        case .graph(let weight, let direction):
-//            
-//            if(Direction == .we)
-//            {
-//            
-//            }
-//            else
-//            {
-//                
-//            }
-//            
-//        default:
-//            <#code#>
-//        }
-//    }
+    public func graph(with type: SwiftyGraphType) -> AnyObject
+    {
+        switch type
+        {
+        case .graph(let weight, let direction):
+            
+            if(weight == .unweighted)
+            {
+                let unweightedGraph = GraphUnweighted.init(direction: direction)
+                
+                return unweightedGraph
+            }
+            else
+            {
+                let weightedGraph = GraphWeighted.init(direction: direction)
+                
+                return weightedGraph
+            }
+        }
+    }
 }
 
 //extension SwiftyGraph

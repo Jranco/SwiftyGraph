@@ -12,9 +12,9 @@ public class GraphBase: GraphProtocol
 {
     var adjDictionary: [String: [String:EdgeProtocol]] = [:]
     var vertices: [String: VerticeProtocol] = [:]
-    public internal(set) var direction: Direction = .directed
+    public internal(set) var direction: DirectionType = .directed
     
-    required public init(direction: Direction)
+    required public init(direction: DirectionType)
     {
         self.direction = direction
     }
@@ -40,7 +40,7 @@ extension GraphBase
 
 extension GraphBase
 {
-    internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction, weight: Weight)
+    internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight)
     {
         let edge = Edge.weighted(direction, weight)
         
@@ -52,7 +52,7 @@ extension GraphBase
         }
     }
     
-    internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction)
+    internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType)
     {
         let edge = Edge.unweighted(direction)
         

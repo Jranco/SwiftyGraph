@@ -10,8 +10,8 @@ import Foundation
 
 public enum Edge
 {
-    case weighted(Direction, Weight)
-    case unweighted(Direction)
+    case weighted(DirectionType, Weight)
+    case unweighted(DirectionType)
 }
 
 extension Edge: EdgeProtocol

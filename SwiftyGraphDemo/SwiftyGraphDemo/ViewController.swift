@@ -11,9 +11,10 @@ import SwiftyGraph
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
+        
         
         let myWeightedGraph = GraphWeighted.init(direction: .directed)
         
@@ -21,12 +22,19 @@ class ViewController: UIViewController {
         let vOne = Vertice.vDefault(id: "one")
         let vTwo = Vertice.vDefault(id: "two")
         
-        myWeightedGraph.addEdge(origin: vZero, destination: vOne, weight: Weight.wDefault(value: 1))
-        myWeightedGraph.addEdge(origin: vTwo, destination: vOne, weight: Weight.wDefault(value: 1))
-        myWeightedGraph.addEdge(origin: vZero, destination: vTwo, weight: Weight.wDefault(value: 8))
+        myWeightedGraph.addEdge(origin: vZero, destination: vOne, weight: Weight.weightDefault(value: 1))
+        myWeightedGraph.addEdge(origin: vTwo, destination: vOne, weight: Weight.weightDefault(value: 1))
+        myWeightedGraph.addEdge(origin: vZero, destination: vTwo, weight: Weight.weightDefault(value: 8))
   
+        let myUnweightedGraph = GraphUnweighted.init(direction: .directed)
+        
+        let uvZero = Vertice.vDefault(id: "zero")
+        let uvOne  = Vertice.vDefault(id: "one")
+        let uvTwo  = Vertice.vDefault(id: "two")
 
-        myWeightedGraph.printGraph()
+        myUnweightedGraph.addEdge(origin: uvZero, destination: uvTwo)
+
+        myUnweightedGraph.printGraph()
 
     }
 

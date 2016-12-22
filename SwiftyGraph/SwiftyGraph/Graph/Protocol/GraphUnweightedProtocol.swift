@@ -15,7 +15,7 @@ protocol GraphUnweightedProtocol: GraphProtocol
 
 extension GraphUnweightedProtocol
 {
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
+    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
     {
         addEdge(origin: origin, destination: destination, direction: self.direction)
     }
