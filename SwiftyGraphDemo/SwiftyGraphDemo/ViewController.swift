@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        let myWeightedGraph = GraphWeighted.init(direction: .undirected)
+        let myWeightedGraph = GraphWeighted.init(direction: .directed)
         
         let vZero = Vertice.vDefault(id: "zero")
         let vOne = Vertice.vDefault(id: "one")

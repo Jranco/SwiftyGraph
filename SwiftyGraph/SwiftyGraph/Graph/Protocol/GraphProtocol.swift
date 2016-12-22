@@ -22,3 +22,8 @@ protocol GraphProtocol
     func addVertice(vertice: VerticeProtocol)
 }
 
+extension GraphProtocol
+{
+
+}
+

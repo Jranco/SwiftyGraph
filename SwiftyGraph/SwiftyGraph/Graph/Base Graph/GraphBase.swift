@@ -45,6 +45,11 @@ extension GraphBase
         let edge = Edge.weighted(direction, weight)
         
         addEdge(origin: origin, destination: destination, edge: edge)
+        
+        if(direction == .undirected && adjDictionary[destination.vId!]?[origin.vId!] == nil)
+        {
+            addEdge(origin: destination, destination: origin, direction: direction, weight: weight)
+        }
     }
     
     internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: Direction)
@@ -52,6 +57,11 @@ extension GraphBase
         let edge = Edge.unweighted(direction)
         
         addEdge(origin: origin, destination: destination, edge: edge)
+        
+        if(direction == .undirected && adjDictionary[destination.vId!]?[origin.vId!] == nil)
+        {
+            addEdge(origin: destination, destination: origin, direction: direction)
+        }
     }
     
     internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
@@ -64,7 +74,7 @@ extension GraphBase
             
         }
         
-        nearbyDictionary[destination.vId!] = edge        
+        nearbyDictionary[destination.vId!]  = edge
         adjDictionary[origin.vId!]          = nearbyDictionary
     }
     

@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C15SwiftyGraphDemo14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- !private "Weight"
 - !private "Vertice"
 - "ViewController"
-- !private "StringLiteralType"
+- !private "Weight"
 - !private "GraphWeighted"
 - "UIViewController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "GraphWeighted"]
 - !private ["Ps9AnyObject", "Vertice"]
@@ -50,13 +50,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["O11SwiftyGraph9Direction", "deinit"]
-- !private ["O11SwiftyGraph9Direction", "undirected"]
+- !private ["O11SwiftyGraph9Direction", "directed"]
 - !private ["Ps9Equatable", "GraphWeighted"]
 - !private ["Ps9Equatable", "Vertice"]
 - !private ["Ps9Equatable", "Weight"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "directed"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "undirected"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -80,8 +80,8 @@ depends-member:
 - !private ["Ps8Hashable", "Vertice"]
 - !private ["Ps8Hashable", "Weight"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "directed"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "undirected"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["Si", "deinit"]
@@ -202,8 +202,8 @@ depends-member:
 - !private ["Ps9_Hashable", "Vertice"]
 - !private ["Ps9_Hashable", "Weight"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "directed"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "undirected"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
