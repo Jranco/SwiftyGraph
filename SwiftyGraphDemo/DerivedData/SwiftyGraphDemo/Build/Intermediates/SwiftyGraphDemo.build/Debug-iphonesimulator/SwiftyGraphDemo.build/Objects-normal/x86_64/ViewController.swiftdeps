@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 depends-top-level:
-- !private "Weight"
-- "UIViewController"
-- !private "GraphUnweighted"
-- !private "GraphWeighted"
-- !private "StringLiteralType"
-- !private "Vertice"
 - "ViewController"
+- !private "GraphUnweighted"
+- !private "Vertice"
+- !private "GraphWeighted"
+- "UIViewController"
+- !private "StringLiteralType"
+- !private "Weight"
 depends-member:
 - !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]
@@ -25,6 +25,7 @@ depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "printGraph"]
+- !private ["Ps9AnyObject", "printVertices"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps7CVarArg", "GraphUnweighted"]
@@ -72,9 +73,11 @@ depends-member:
 - !private ["C11SwiftyGraph9GraphBase", "addEdge"]
 - !private ["C11SwiftyGraph9GraphBase", "init"]
 - !private ["C11SwiftyGraph9GraphBase", "printGraph"]
+- !private ["C11SwiftyGraph9GraphBase", "printVertices"]
 - !private ["P11SwiftyGraph13GraphProtocol", "addEdge"]
 - !private ["P11SwiftyGraph13GraphProtocol", "init"]
 - !private ["P11SwiftyGraph13GraphProtocol", "printGraph"]
+- !private ["P11SwiftyGraph13GraphProtocol", "printVertices"]
 - !private ["C11SwiftyGraph15GraphUnweighted", "addEdge"]
 - ["C11SwiftyGraph15GraphUnweighted", "deinit"]
 - !private ["C11SwiftyGraph15GraphUnweighted", "init"]
@@ -85,8 +88,10 @@ depends-member:
 - !private ["C11SwiftyGraph13GraphWeighted", "addEdge"]
 - ["C11SwiftyGraph13GraphWeighted", "deinit"]
 - !private ["C11SwiftyGraph13GraphWeighted", "init"]
+- !private ["C11SwiftyGraph13GraphWeighted", "printVertices"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "addEdge"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "init"]
+- !private ["P11SwiftyGraph21GraphWeightedProtocol", "printVertices"]
 - !private ["Ps8Hashable", "GraphUnweighted"]
 - !private ["Ps8Hashable", "GraphWeighted"]
 - !private ["Ps8Hashable", "Vertice"]

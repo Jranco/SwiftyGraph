@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         myWeightedGraph.addEdge(origin: vTwo, destination: vOne, weight: Weight.weightDefault(value: 1))
         myWeightedGraph.addEdge(origin: vZero, destination: vTwo, weight: Weight.weightDefault(value: 8))
   
+        myWeightedGraph.printVertices()
+        
         let myUnweightedGraph = GraphUnweighted.init(direction: .directed)
         
         let uvZero = Vertice.vDefault(id: "zero")

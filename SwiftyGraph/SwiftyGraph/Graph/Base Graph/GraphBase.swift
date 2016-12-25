@@ -36,6 +36,14 @@ extension GraphBase
             
         }
     }
+    
+    public func printVertices()
+    {
+        for vertice in vertices
+        {
+            print("vertice: id", vertice.key)
+        }
+    }
 }
 
 extension GraphBase
@@ -66,6 +74,7 @@ extension GraphBase
     
     internal func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
     {
+        // Add edge
         var nearbyDictionary: [String: EdgeProtocol] = [:]
         
         if(adjDictionary[origin.vId!] != nil)
@@ -76,6 +85,11 @@ extension GraphBase
         
         nearbyDictionary[destination.vId!]  = edge
         adjDictionary[origin.vId!]          = nearbyDictionary
+        
+        // Add vertice
+        self.addVertice(vertice: origin)
+        self.addVertice(vertice: destination)
+
     }
     
     internal func addVertice(vertice: VerticeProtocol)
