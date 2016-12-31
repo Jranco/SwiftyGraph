@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C15SwiftyGraphDemo14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "ViewController"
-- !private "GraphUnweighted"
-- !private "Vertice"
-- !private "GraphWeighted"
-- "UIViewController"
 - !private "StringLiteralType"
 - !private "Weight"
+- !private "GraphUnweighted"
+- "UIViewController"
+- !private "GraphWeighted"
+- !private "Vertice"
+- "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]
@@ -70,10 +70,6 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["C11SwiftyGraph9GraphBase", "addEdge"]
-- !private ["C11SwiftyGraph9GraphBase", "init"]
-- !private ["C11SwiftyGraph9GraphBase", "printGraph"]
-- !private ["C11SwiftyGraph9GraphBase", "printVertices"]
 - !private ["P11SwiftyGraph13GraphProtocol", "addEdge"]
 - !private ["P11SwiftyGraph13GraphProtocol", "init"]
 - !private ["P11SwiftyGraph13GraphProtocol", "printGraph"]
@@ -82,15 +78,19 @@ depends-member:
 - ["C11SwiftyGraph15GraphUnweighted", "deinit"]
 - !private ["C11SwiftyGraph15GraphUnweighted", "init"]
 - !private ["C11SwiftyGraph15GraphUnweighted", "printGraph"]
+- !private ["C11SwiftyGraph15GraphUnweighted", "printVertices"]
 - !private ["P11SwiftyGraph23GraphUnweightedProtocol", "addEdge"]
 - !private ["P11SwiftyGraph23GraphUnweightedProtocol", "init"]
 - !private ["P11SwiftyGraph23GraphUnweightedProtocol", "printGraph"]
+- !private ["P11SwiftyGraph23GraphUnweightedProtocol", "printVertices"]
 - !private ["C11SwiftyGraph13GraphWeighted", "addEdge"]
 - ["C11SwiftyGraph13GraphWeighted", "deinit"]
 - !private ["C11SwiftyGraph13GraphWeighted", "init"]
+- !private ["C11SwiftyGraph13GraphWeighted", "printGraph"]
 - !private ["C11SwiftyGraph13GraphWeighted", "printVertices"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "addEdge"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "init"]
+- !private ["P11SwiftyGraph21GraphWeightedProtocol", "printGraph"]
 - !private ["P11SwiftyGraph21GraphWeightedProtocol", "printVertices"]
 - !private ["Ps8Hashable", "GraphUnweighted"]
 - !private ["Ps8Hashable", "GraphWeighted"]
@@ -252,7 +252,6 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "C11SwiftyGraph9GraphBase"
 - !private "P11SwiftyGraph13GraphProtocol"
 - "C11SwiftyGraph15GraphUnweighted"
 - !private "P11SwiftyGraph23GraphUnweightedProtocol"
@@ -305,6 +304,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/SwiftyGraph/SwiftyGraph.framework/Modules/SwiftyGraph.swiftmodule/x86_64.swiftmodule"
 - "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/DerivedData/SwiftyGraphDemo/Build/Products/Debug-iphonesimulator/SwiftyGraph/SwiftyGraph.framework/Headers/SwiftyGraph-Swift.h"

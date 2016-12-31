@@ -28,15 +28,32 @@ class ViewController: UIViewController {
   
         myWeightedGraph.printVertices()
         
+        myWeightedGraph.printGraph()
+        
         let myUnweightedGraph = GraphUnweighted.init(direction: .directed)
         
-        let uvZero = Vertice.vDefault(id: "zero")
-        let uvOne  = Vertice.vDefault(id: "one")
-        let uvTwo  = Vertice.vDefault(id: "two")
-
-        myUnweightedGraph.addEdge(origin: uvZero, destination: uvTwo)
-
+        let vZeroUW = Vertice.vDefault(id: "zero")
+        let vOneUW = Vertice.vDefault(id: "one")
+        let vTwoUW = Vertice.vDefault(id: "two")
+        
+        myUnweightedGraph.addEdge(origin: vZeroUW, destination: vOneUW)
+        myUnweightedGraph.addEdge(origin: vTwoUW, destination: vOneUW)
+        myUnweightedGraph.addEdge(origin: vZeroUW, destination: vTwoUW)
+        
+        myUnweightedGraph.printVertices()
+        
         myUnweightedGraph.printGraph()
+
+//
+//        let myUnweightedGraph = GraphUnweighted.init(direction: .directed)
+//        
+//        let uvZero = Vertice.vDefault(id: "zero")
+//        let uvOne  = Vertice.vDefault(id: "one")
+//        let uvTwo  = Vertice.vDefault(id: "two")
+//
+//        myUnweightedGraph.addEdge(origin: uvZero, destination: uvTwo)
+//
+//        myUnweightedGraph.printGraph()
 
     }
 

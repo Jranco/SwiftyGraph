@@ -22,7 +22,6 @@
 		7D031425B2C302F6C3CF7157BB8880E8 /* DirectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0DED229CDFCEF4942310A365DD930 /* DirectionType.swift */; };
 		966A882FCBEC9378BE842B2FE1E46DF7 /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9CD6BC1753473AA9A7867E7451390 /* VerticeProtocol.swift */; };
 		982AE8890EED75FB2C2AB0CF605C878F /* SwiftyGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BE1BDC6ECCAE76AEDDFA8A62B1C408 /* SwiftyGraph-dummy.m */; };
-		98BD994805D1556CBE958AF2771DC947 /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A8B15088DF84E04122B3F61D07E75 /* GraphBase.swift */; };
 		AA97F9B5AEEF570CF4B3F0B1F0F2998C /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B159C03B2D90D38663E047076B83CD5 /* GraphUnweighted.swift */; };
 		AC75C07A96ECBC691770759EF817F0A7 /* Pods-SwiftyGraphDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FAB4794056FA0670027A5DDFD580E /* Pods-SwiftyGraphDemo-dummy.m */; };
 		B7FEB462F0EC7E95543935AF043BA791 /* GraphWeightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6035169F463327E55320CC51277BE4 /* GraphWeightedProtocol.swift */; };
@@ -91,7 +90,6 @@
 		B92AED9B2301EE79466088F8DF65C95D /* GraphProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphProtocol.swift; sourceTree = "<group>"; };
 		BBE91E853ED57C3D9F24515B511EA15A /* WeightType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeightType.swift; sourceTree = "<group>"; };
 		BDEDC8CB791C6FD1380A30E6E7707B17 /* Pods-SwiftyGraphDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyGraphDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C40A8B15088DF84E04122B3F61D07E75 /* GraphBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
 		CB3D92E77D5B44BF6A6A4A6DEABA2DB7 /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC6D8CD0B21F5D51258FA99408020932 /* SwiftyGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGraph.xcconfig; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				E8A4F3BA7213F7EE5573A341DBA3A89F /* SwiftyGraph.swift */,
-				CC2B7F21519A81EBF5FD7BFE64F84ABF /* Base Graph */,
 				16DD8725C49889A200791221ED3E7A0E /* Direction */,
 				453390974D4BC0B45951B8427DCD2A1F /* Inherited Graphs */,
 				CF163DB1E014DBF9330868D10E33E111 /* Protocol */,
@@ -309,14 +306,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC2B7F21519A81EBF5FD7BFE64F84ABF /* Base Graph */ = {
-			isa = PBXGroup;
-			children = (
-				C40A8B15088DF84E04122B3F61D07E75 /* GraphBase.swift */,
-			);
-			path = "Base Graph";
 			sourceTree = "<group>";
 		};
 		CF163DB1E014DBF9330868D10E33E111 /* Protocol */ = {
@@ -532,7 +521,6 @@
 				7D031425B2C302F6C3CF7157BB8880E8 /* DirectionType.swift in Sources */,
 				EE0A921AD432180B24D033D60852FE14 /* Edge.swift in Sources */,
 				F067989FEDC9C96C0D48019419FB6B19 /* EdgeProtocol.swift in Sources */,
-				98BD994805D1556CBE958AF2771DC947 /* GraphBase.swift in Sources */,
 				FF48ECDCF5163114390680C592ECFA18 /* GraphProtocol.swift in Sources */,
 				AA97F9B5AEEF570CF4B3F0B1F0F2998C /* GraphUnweighted.swift in Sources */,
 				43549B01476E9071FE878DC6A72EDAE6 /* GraphUnweightedProtocol.swift in Sources */,

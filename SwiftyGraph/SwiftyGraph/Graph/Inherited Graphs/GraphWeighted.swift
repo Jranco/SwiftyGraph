@@ -8,10 +8,41 @@
 
 import Foundation
 
-public class GraphWeighted: GraphBase, GraphWeightedProtocol
+public class GraphWeighted: GraphWeightedProtocol
 {
-    public required init(direction: DirectionType)
+    var adjDictionary: [String: [String:EdgeProtocol]] = [:]
+    var vertices: [String: VerticeProtocol] = [:]
+    public internal(set) var direction: DirectionType = .directed
+   
+    
+    required public init(direction: DirectionType)
     {
-        super.init(direction: direction)
+        self.direction = direction
+    }
+}
+
+extension GraphWeighted
+{
+    public func printGraph()
+    {
+        for (vId, nearby) in adjDictionary
+        {
+            print("for vId: \(vId)")
+            
+            for (vId, edge) in nearby
+            {
+                print("nearby vId: \(vId)")
+                print("nearby edge weight: \(edge.weight?.value)")
+            }
+            
+        }
+    }
+    
+    public func printVertices()
+    {
+        for vertice in vertices
+        {
+            print("vertice: id", vertice.key)
+        }
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 public enum Weight
 {
     case weightDefault(value: Int)
-    case weightCustom(value: Int, body: WeightProtocol)
+    case weightCustom(value: Int, metaData: WeightProtocol)
 }
 
 extension Weight: WeightProtocol
@@ -21,7 +21,7 @@ extension Weight: WeightProtocol
         switch self {
         case .weightDefault(let value):
             return value
-        case .weightCustom(let value, let body):
+        case .weightCustom(let value, let metaData):
             return value
         }
     }
