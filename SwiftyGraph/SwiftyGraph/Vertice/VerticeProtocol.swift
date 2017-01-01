@@ -10,5 +10,5 @@ import Foundation
 
 public protocol VerticeProtocol
 {
-    var vId: String? {get}
+    var identifier: String? {get}
 }

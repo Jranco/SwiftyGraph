@@ -10,18 +10,18 @@ import Foundation
 
 public enum Vertice
 {
-    case vDefault(id: String)
-    case vCustom(id: String, body: VerticeBody)
+    case typeDefault(id: String)
+    case typeCustom(id: String, metaData: VerticeMetaData)
 }
 
 extension Vertice: VerticeProtocol
 {
-    public var vId: String?{
+    public var identifier: String?{
         
         switch self {
-            case .vDefault(let id):
+            case .typeDefault(let id):
                 return id
-            case .vCustom(let id, let body):
+            case .typeCustom(let id, let metaData):
                 return id
         }
     }

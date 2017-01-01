@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- !private "StringLiteralType"
+- !private "GraphWeighted"
+- "UIViewController"
 - !private "Weight"
 - !private "GraphUnweighted"
-- "UIViewController"
-- !private "GraphWeighted"
-- !private "Vertice"
+- !private "StringLiteralType"
 - "ViewController"
+- !private "Vertice"
 depends-member:
 - !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]
@@ -210,8 +210,8 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["O11SwiftyGraph7Vertice", "deinit"]
-- !private ["O11SwiftyGraph7Vertice", "vDefault"]
-- !private ["P11SwiftyGraph15VerticeProtocol", "vDefault"]
+- !private ["O11SwiftyGraph7Vertice", "typeDefault"]
+- !private ["P11SwiftyGraph15VerticeProtocol", "typeDefault"]
 - !private ["C15SwiftyGraphDemo14ViewController", "GraphUnweighted"]
 - !private ["C15SwiftyGraphDemo14ViewController", "GraphWeighted"]
 - !private ["C15SwiftyGraphDemo14ViewController", "Vertice"]

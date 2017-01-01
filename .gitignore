@@ -8,8 +8,8 @@
 
 ## Build generated
 build/
-**/DerivedData/
-**/DerivedData/
+SwiftyGraphDemo/DerivedData/
+SwiftyGraphDemo/DerivedData/
 
 ## Various settings
 *.pbxuser

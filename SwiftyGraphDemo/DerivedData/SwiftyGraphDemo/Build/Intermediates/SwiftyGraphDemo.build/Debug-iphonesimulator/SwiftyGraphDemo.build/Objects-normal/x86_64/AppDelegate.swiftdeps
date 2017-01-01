@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C15SwiftyGraphDemo11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
+- "application"
 - "applicationDidEnterBackground"
 - "window"
-- "applicationWillEnterForeground"
-- "applicationDidBecomeActive"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
-- "application"
+- "applicationWillTerminate"
 depends-top-level:
-- "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
-- "UIApplication"
 - "UIApplicationDelegate"
-- "Bool"
-- !private "BooleanLiteralType"
+- "AppDelegate"
 - "UIWindow"
+- "Bool"
+- "UIApplication"
+- "UIApplicationLaunchOptionsKey"
+- !private "BooleanLiteralType"
 - "UIResponder"
 depends-member:
 - ["Ps9AnyObject", "application"]

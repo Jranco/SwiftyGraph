@@ -30,7 +30,7 @@ extension GraphProtocol
         
         addEdge(origin: origin, destination: destination, edge: edge)
         
-        if(direction == .undirected && adjDictionary[destination.vId!]?[origin.vId!] == nil)
+        if(direction == .undirected && adjDictionary[destination.identifier!]?[origin.identifier!] == nil)
         {
             addEdge(origin: destination, destination: origin, direction: direction, weight: weight)
         }
@@ -42,7 +42,7 @@ extension GraphProtocol
         
         addEdge(origin: origin, destination: destination, edge: edge)
         
-        if(direction == .undirected && adjDictionary[destination.vId!]?[origin.vId!] == nil)
+        if(direction == .undirected && adjDictionary[destination.identifier!]?[origin.identifier!] == nil)
         {
             addEdge(origin: destination, destination: origin, direction: direction)
         }
@@ -53,14 +53,14 @@ extension GraphProtocol
         // Add edge
         var nearbyDictionary: [String: EdgeProtocol] = [:]
         
-        if(adjDictionary[origin.vId!] != nil)
+        if(adjDictionary[origin.identifier!] != nil)
         {
-            nearbyDictionary = adjDictionary[origin.vId!]!
+            nearbyDictionary = adjDictionary[origin.identifier!]!
             
         }
         
-        nearbyDictionary[destination.vId!]  = edge
-        adjDictionary[origin.vId!]          = nearbyDictionary
+        nearbyDictionary[destination.identifier!]  = edge
+        adjDictionary[origin.identifier!]          = nearbyDictionary
         
         // Add vertice
         self.addVertice(vertice: origin)
@@ -70,7 +70,7 @@ extension GraphProtocol
     
     func addVertice(vertice: VerticeProtocol)
     {
-        vertices[vertice.vId!] = vertice
+        vertices[vertice.identifier!] = vertice
     }
 
 }

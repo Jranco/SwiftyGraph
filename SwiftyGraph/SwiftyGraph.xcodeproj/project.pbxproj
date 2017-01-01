@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E90F34D81E02802200E76780 /* ttest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F34D71E02802200E76780 /* ttest.swift */; };
 		E90F4BB01DFF3C2A0095C28C /* SwiftyGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */; };
 		E90F4BB51DFF3C2A0095C28C /* SwiftyGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */; };
 		E90F4BB71DFF3C2A0095C28C /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,7 +15,6 @@
 		E97257631E0BBD4200180714 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574D1E0BBD4200180714 /* Weight.swift */; };
 		E97257641E0BBD4200180714 /* WeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574E1E0BBD4200180714 /* WeightProtocol.swift */; };
 		E97257651E0BBD4200180714 /* WeightType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574F1E0BBD4200180714 /* WeightType.swift */; };
-		E97257661E0BBD4200180714 /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257521E0BBD4200180714 /* GraphBase.swift */; };
 		E97257671E0BBD4200180714 /* DirectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257541E0BBD4200180714 /* DirectionType.swift */; };
 		E97257681E0BBD4200180714 /* GraphUnweighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257561E0BBD4200180714 /* GraphUnweighted.swift */; };
 		E97257691E0BBD4200180714 /* GraphWeighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257571E0BBD4200180714 /* GraphWeighted.swift */; };
@@ -25,8 +23,8 @@
 		E972576C1E0BBD4200180714 /* GraphWeightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575B1E0BBD4200180714 /* GraphWeightedProtocol.swift */; };
 		E972576D1E0BBD4200180714 /* SwiftyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575C1E0BBD4200180714 /* SwiftyGraph.swift */; };
 		E972576E1E0BBD4200180714 /* Vertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575E1E0BBD4200180714 /* Vertice.swift */; };
-		E972576F1E0BBD4200180714 /* VerticeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575F1E0BBD4200180714 /* VerticeBody.swift */; };
 		E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257601E0BBD4200180714 /* VerticeProtocol.swift */; };
+		E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E882E01E196E290078E2CD /* VerticeMetaData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E90F34D71E02802200E76780 /* ttest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ttest.swift; sourceTree = "<group>"; };
 		E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGraph.h; sourceTree = "<group>"; };
 		E90F4BAA1DFF3C290095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +49,6 @@
 		E972574D1E0BBD4200180714 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		E972574E1E0BBD4200180714 /* WeightProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightProtocol.swift; sourceTree = "<group>"; };
 		E972574F1E0BBD4200180714 /* WeightType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightType.swift; sourceTree = "<group>"; };
-		E97257521E0BBD4200180714 /* GraphBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
 		E97257541E0BBD4200180714 /* DirectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionType.swift; sourceTree = "<group>"; };
 		E97257561E0BBD4200180714 /* GraphUnweighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweighted.swift; sourceTree = "<group>"; };
 		E97257571E0BBD4200180714 /* GraphWeighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeighted.swift; sourceTree = "<group>"; };
@@ -61,8 +57,8 @@
 		E972575B1E0BBD4200180714 /* GraphWeightedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeightedProtocol.swift; sourceTree = "<group>"; };
 		E972575C1E0BBD4200180714 /* SwiftyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGraph.swift; sourceTree = "<group>"; };
 		E972575E1E0BBD4200180714 /* Vertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertice.swift; sourceTree = "<group>"; };
-		E972575F1E0BBD4200180714 /* VerticeBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeBody.swift; sourceTree = "<group>"; };
 		E97257601E0BBD4200180714 /* VerticeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeProtocol.swift; sourceTree = "<group>"; };
+		E9E882E01E196E290078E2CD /* VerticeMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeMetaData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +106,6 @@
 				E972575D1E0BBD4200180714 /* Vertice */,
 				E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */,
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
-				E90F34D71E02802200E76780 /* ttest.swift */,
 			);
 			path = SwiftyGraph;
 			sourceTree = "<group>";
@@ -139,21 +134,12 @@
 		E97257501E0BBD4200180714 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
-				E97257511E0BBD4200180714 /* Base Graph */,
 				E97257531E0BBD4200180714 /* Direction */,
 				E97257551E0BBD4200180714 /* Inherited Graphs */,
 				E97257581E0BBD4200180714 /* Protocol */,
 				E972575C1E0BBD4200180714 /* SwiftyGraph.swift */,
 			);
 			path = Graph;
-			sourceTree = "<group>";
-		};
-		E97257511E0BBD4200180714 /* Base Graph */ = {
-			isa = PBXGroup;
-			children = (
-				E97257521E0BBD4200180714 /* GraphBase.swift */,
-			);
-			path = "Base Graph";
 			sourceTree = "<group>";
 		};
 		E97257531E0BBD4200180714 /* Direction */ = {
@@ -186,8 +172,8 @@
 		E972575D1E0BBD4200180714 /* Vertice */ = {
 			isa = PBXGroup;
 			children = (
+				E9E882E01E196E290078E2CD /* VerticeMetaData.swift */,
 				E972575E1E0BBD4200180714 /* Vertice.swift */,
-				E972575F1E0BBD4200180714 /* VerticeBody.swift */,
 				E97257601E0BBD4200180714 /* VerticeProtocol.swift */,
 			);
 			path = Vertice;
@@ -309,17 +295,15 @@
 				E972576D1E0BBD4200180714 /* SwiftyGraph.swift in Sources */,
 				E972576C1E0BBD4200180714 /* GraphWeightedProtocol.swift in Sources */,
 				E97257641E0BBD4200180714 /* WeightProtocol.swift in Sources */,
+				E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */,
 				E972576A1E0BBD4200180714 /* GraphProtocol.swift in Sources */,
 				E97257671E0BBD4200180714 /* DirectionType.swift in Sources */,
 				E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */,
-				E97257661E0BBD4200180714 /* GraphBase.swift in Sources */,
 				E97257651E0BBD4200180714 /* WeightType.swift in Sources */,
 				E97257621E0BBD4200180714 /* EdgeProtocol.swift in Sources */,
 				E97257611E0BBD4200180714 /* Edge.swift in Sources */,
-				E90F34D81E02802200E76780 /* ttest.swift in Sources */,
 				E972576B1E0BBD4200180714 /* GraphUnweightedProtocol.swift in Sources */,
 				E97257631E0BBD4200180714 /* Weight.swift in Sources */,
-				E972576F1E0BBD4200180714 /* VerticeBody.swift in Sources */,
 				E972576E1E0BBD4200180714 /* Vertice.swift in Sources */,
 				E97257681E0BBD4200180714 /* GraphUnweighted.swift in Sources */,
 				E97257691E0BBD4200180714 /* GraphWeighted.swift in Sources */,
