@@ -19,9 +19,9 @@ extension Edge: EdgeProtocol
     public var weight: Weight?{
     
         switch self {
-            case .weighted(let direction, let weight):
+            case .weighted( _, let weight):
                 return weight
-            case .unweighted(let direction):
+            case .unweighted( _):
                 return nil
         }
     }

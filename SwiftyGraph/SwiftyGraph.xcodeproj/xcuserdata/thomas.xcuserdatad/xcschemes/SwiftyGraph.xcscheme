@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E90F4BAE1DFF3C2A0095C28C"
-               BuildableName = "SwiftyGraphTests.xctest"
-               BlueprintName = "SwiftyGraphTests"
-               ReferencedContainer = "container:SwiftyGraph.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

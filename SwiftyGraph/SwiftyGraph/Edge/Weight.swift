@@ -21,7 +21,7 @@ extension Weight: WeightProtocol
         switch self {
         case .weightDefault(let value):
             return value
-        case .weightCustom(let value, let metaData):
+        case .weightCustom(let value, _):
             return value
         }
     }

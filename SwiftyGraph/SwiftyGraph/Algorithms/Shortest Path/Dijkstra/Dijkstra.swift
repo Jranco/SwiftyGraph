@@ -48,7 +48,7 @@ extension GraphWeighted
             {
                 if(distance[v] == nil)
                 {
-                    var alt = distance[minDistVertex]! + (edge.weight?.value)!
+                    let alt = distance[minDistVertex]! + (edge.weight?.value)!
 
                     distance[v] = alt
                     prev[v] = vertices[minDistVertex]
