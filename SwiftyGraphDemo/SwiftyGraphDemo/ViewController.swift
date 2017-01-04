@@ -60,23 +60,11 @@ class ViewController: UIViewController {
         myUnweightedGraph.printVertices()
         
         myUnweightedGraph.printGraph()
-
-//
-//        let myUnweightedGraph = GraphUnweighted.init(direction: .directed)
-//        
-//        let uvZero = Vertice.vDefault(id: "zero")
-//        let uvOne  = Vertice.vDefault(id: "one")
-//        let uvTwo  = Vertice.vDefault(id: "two")
-//
-//        myUnweightedGraph.addEdge(origin: uvZero, destination: uvTwo)
-//
-//        myUnweightedGraph.printGraph()
-
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
