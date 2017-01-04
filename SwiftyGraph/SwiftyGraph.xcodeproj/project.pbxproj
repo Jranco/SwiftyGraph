@@ -30,8 +30,6 @@
 		E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGraph.h; sourceTree = "<group>"; };
 		E90F4BAA1DFF3C290095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E93B47021E1D52680030F9CC /* SwiftyGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGraphTests.swift; sourceTree = "<group>"; };
-		E93B47041E1D52680030F9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E972574B1E0BBD4200180714 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		E972574C1E0BBD4200180714 /* EdgeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeProtocol.swift; sourceTree = "<group>"; };
 		E972574D1E0BBD4200180714 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				E90F4BA81DFF3C290095C28C /* SwiftyGraph */,
-				E93B47011E1D52680030F9CC /* SwiftyGraphTests */,
 				E90F4BA71DFF3C290095C28C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,15 +86,6 @@
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
 			);
 			path = SwiftyGraph;
-			sourceTree = "<group>";
-		};
-		E93B47011E1D52680030F9CC /* SwiftyGraphTests */ = {
-			isa = PBXGroup;
-			children = (
-				E93B47021E1D52680030F9CC /* SwiftyGraphTests.swift */,
-				E93B47041E1D52680030F9CC /* Info.plist */,
-			);
-			path = SwiftyGraphTests;
 			sourceTree = "<group>";
 		};
 		E972574A1E0BBD4200180714 /* Edge */ = {
