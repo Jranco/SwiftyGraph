@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- !private "GraphWeighted"
-- "UIViewController"
-- !private "GraphUnweighted"
-- !private "print"
-- !private "Weight"
-- !private "StringLiteralType"
 - !private "Vertice"
 - "ViewController"
+- !private "print"
+- !private "GraphUnweighted"
+- !private "StringLiteralType"
+- !private "Weight"
+- !private "GraphWeighted"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]

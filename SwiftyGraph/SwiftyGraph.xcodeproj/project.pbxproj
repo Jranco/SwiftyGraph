@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E90F4BB01DFF3C2A0095C28C /* SwiftyGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */; };
-		E90F4BB51DFF3C2A0095C28C /* SwiftyGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */; };
 		E90F4BB71DFF3C2A0095C28C /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E97257611E0BBD4200180714 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574B1E0BBD4200180714 /* Edge.swift */; };
 		E97257621E0BBD4200180714 /* EdgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574C1E0BBD4200180714 /* EdgeProtocol.swift */; };
@@ -28,21 +26,10 @@
 		E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E882E01E196E290078E2CD /* VerticeMetaData.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E90F4BB11DFF3C2A0095C28C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E90F4B9D1DFF3C290095C28C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E90F4BA51DFF3C290095C28C;
-			remoteInfo = SwiftyGraph;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGraph.h; sourceTree = "<group>"; };
 		E90F4BAA1DFF3C290095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E90F4BAF1DFF3C2A0095C28C /* SwiftyGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BB41DFF3C2A0095C28C /* SwiftyGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGraphTests.swift; sourceTree = "<group>"; };
 		E90F4BB61DFF3C2A0095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E972574B1E0BBD4200180714 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
@@ -71,14 +58,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E90F4BAC1DFF3C2A0095C28C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E90F4BB01DFF3C2A0095C28C /* SwiftyGraph.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */,
-				E90F4BAF1DFF3C2A0095C28C /* SwiftyGraphTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,24 +216,6 @@
 			productReference = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E90F4BAE1DFF3C2A0095C28C /* SwiftyGraphTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E90F4BBD1DFF3C2A0095C28C /* Build configuration list for PBXNativeTarget "SwiftyGraphTests" */;
-			buildPhases = (
-				E90F4BAB1DFF3C2A0095C28C /* Sources */,
-				E90F4BAC1DFF3C2A0095C28C /* Frameworks */,
-				E90F4BAD1DFF3C2A0095C28C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E90F4BB21DFF3C2A0095C28C /* PBXTargetDependency */,
-			);
-			name = SwiftyGraphTests;
-			productName = SwiftyGraphTests;
-			productReference = E90F4BAF1DFF3C2A0095C28C /* SwiftyGraphTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -270,11 +230,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = HUBMAYY26V;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					E90F4BAE1DFF3C2A0095C28C = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = HUBMAYY26V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -292,20 +247,12 @@
 			projectRoot = "";
 			targets = (
 				E90F4BA51DFF3C290095C28C /* SwiftyGraph */,
-				E90F4BAE1DFF3C2A0095C28C /* SwiftyGraphTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E90F4BA41DFF3C290095C28C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E90F4BAD1DFF3C2A0095C28C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,23 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E90F4BAB1DFF3C2A0095C28C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E90F4BB51DFF3C2A0095C28C /* SwiftyGraphTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E90F4BB21DFF3C2A0095C28C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E90F4BA51DFF3C290095C28C /* SwiftyGraph */;
-			targetProxy = E90F4BB11DFF3C2A0095C28C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E90F4BB81DFF3C2A0095C28C /* Debug */ = {
@@ -497,32 +428,6 @@
 			};
 			name = Release;
 		};
-		E90F4BBE1DFF3C2A0095C28C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HUBMAYY26V;
-				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JrancoMobile.SwiftyGraphTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		E90F4BBF1DFF3C2A0095C28C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HUBMAYY26V;
-				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JrancoMobile.SwiftyGraphTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,15 +445,6 @@
 			buildConfigurations = (
 				E90F4BBB1DFF3C2A0095C28C /* Debug */,
 				E90F4BBC1DFF3C2A0095C28C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E90F4BBD1DFF3C2A0095C28C /* Build configuration list for PBXNativeTarget "SwiftyGraphTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E90F4BBE1DFF3C2A0095C28C /* Debug */,
-				E90F4BBF1DFF3C2A0095C28C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
