@@ -1,6 +1,0 @@
-framework module Pods_SwiftyGraphDemo {
-  umbrella header "Pods-SwiftyGraphDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
