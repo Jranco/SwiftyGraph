@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E90F4BB71DFF3C2A0095C28C /* SwiftyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93B47031E1D52680030F9CC /* SwiftyGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B47021E1D52680030F9CC /* SwiftyGraphTests.swift */; };
+		E93B47051E1D52680030F9CC /* SwiftyGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */; };
 		E97257611E0BBD4200180714 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574B1E0BBD4200180714 /* Edge.swift */; };
 		E97257621E0BBD4200180714 /* EdgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574C1E0BBD4200180714 /* EdgeProtocol.swift */; };
 		E97257631E0BBD4200180714 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972574D1E0BBD4200180714 /* Weight.swift */; };
@@ -26,10 +28,23 @@
 		E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E882E01E196E290078E2CD /* VerticeMetaData.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E93B47061E1D52680030F9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90F4B9D1DFF3C290095C28C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90F4BA51DFF3C290095C28C;
+			remoteInfo = SwiftyGraph;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGraph.h; sourceTree = "<group>"; };
 		E90F4BAA1DFF3C290095C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E93B47001E1D52680030F9CC /* SwiftyGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93B47021E1D52680030F9CC /* SwiftyGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGraphTests.swift; sourceTree = "<group>"; };
+		E93B47041E1D52680030F9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E972574B1E0BBD4200180714 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		E972574C1E0BBD4200180714 /* EdgeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeProtocol.swift; sourceTree = "<group>"; };
 		E972574D1E0BBD4200180714 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
@@ -56,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E93B46FD1E1D52680030F9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93B47051E1D52680030F9CC /* SwiftyGraph.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				E90F4BA81DFF3C290095C28C /* SwiftyGraph */,
-				E90F4BB31DFF3C2A0095C28C /* SwiftyGraphTests */,
+				E93B47011E1D52680030F9CC /* SwiftyGraphTests */,
 				E90F4BA71DFF3C290095C28C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */,
+				E93B47001E1D52680030F9CC /* SwiftyGraphTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,9 +113,11 @@
 			path = SwiftyGraph;
 			sourceTree = "<group>";
 		};
-		E90F4BB31DFF3C2A0095C28C /* SwiftyGraphTests */ = {
+		E93B47011E1D52680030F9CC /* SwiftyGraphTests */ = {
 			isa = PBXGroup;
 			children = (
+				E93B47021E1D52680030F9CC /* SwiftyGraphTests.swift */,
+				E93B47041E1D52680030F9CC /* Info.plist */,
 			);
 			path = SwiftyGraphTests;
 			sourceTree = "<group>";
@@ -212,13 +238,31 @@
 			productReference = E90F4BA61DFF3C290095C28C /* SwiftyGraph.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E93B46FF1E1D52680030F9CC /* SwiftyGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E93B470A1E1D52680030F9CC /* Build configuration list for PBXNativeTarget "SwiftyGraphTests" */;
+			buildPhases = (
+				E93B46FC1E1D52680030F9CC /* Sources */,
+				E93B46FD1E1D52680030F9CC /* Frameworks */,
+				E93B46FE1E1D52680030F9CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E93B47071E1D52680030F9CC /* PBXTargetDependency */,
+			);
+			name = SwiftyGraphTests;
+			productName = SwiftyGraphTests;
+			productReference = E93B47001E1D52680030F9CC /* SwiftyGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E90F4B9D1DFF3C290095C28C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Thomas Segkoulis";
 				TargetAttributes = {
@@ -226,6 +270,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = HUBMAYY26V;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					E93B46FF1E1D52680030F9CC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HUBMAYY26V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -243,12 +292,20 @@
 			projectRoot = "";
 			targets = (
 				E90F4BA51DFF3C290095C28C /* SwiftyGraph */,
+				E93B46FF1E1D52680030F9CC /* SwiftyGraphTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E90F4BA41DFF3C290095C28C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93B46FE1E1D52680030F9CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,7 +338,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E93B46FC1E1D52680030F9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93B47031E1D52680030F9CC /* SwiftyGraphTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E93B47071E1D52680030F9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90F4BA51DFF3C290095C28C /* SwiftyGraph */;
+			targetProxy = E93B47061E1D52680030F9CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E90F4BB81DFF3C2A0095C28C /* Debug */ = {
@@ -424,6 +497,34 @@
 			};
 			name = Release;
 		};
+		E93B47081E1D52680030F9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = HUBMAYY26V;
+				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JrancoMobile.SwiftyGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E93B47091E1D52680030F9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = HUBMAYY26V;
+				INFOPLIST_FILE = SwiftyGraphTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JrancoMobile.SwiftyGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +545,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E93B470A1E1D52680030F9CC /* Build configuration list for PBXNativeTarget "SwiftyGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E93B47081E1D52680030F9CC /* Debug */,
+				E93B47091E1D52680030F9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

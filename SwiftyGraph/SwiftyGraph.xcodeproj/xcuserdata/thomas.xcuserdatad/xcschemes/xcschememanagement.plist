@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftyGraphTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>E90F4BAE1DFF3C2A0095C28C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E93B46FF1E1D52680030F9CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
