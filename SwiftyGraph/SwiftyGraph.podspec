@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/Jranco/SwiftyGraph.git', :tag =>   s.version.to_s }
     s.platform     = :ios, "9.0"
  s.ios.deployment_target = '9.0'
-  s.source       = { :path => '.' }
+  s.source       = { :path => 'SwiftyGraph' }
   s.source_files = "SwiftyGraph", "SwiftyGraph/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
