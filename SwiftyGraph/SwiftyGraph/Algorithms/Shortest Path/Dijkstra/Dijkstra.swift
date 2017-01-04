@@ -55,7 +55,7 @@ extension GraphWeighted
                 }
                 else
                 {
-                    var alt = distance[minDistVertex]! + (edge.weight?.value)!
+                    let alt = distance[minDistVertex]! + (edge.weight?.value)!
                     
                     if(alt < distance[v]!)
                     {
