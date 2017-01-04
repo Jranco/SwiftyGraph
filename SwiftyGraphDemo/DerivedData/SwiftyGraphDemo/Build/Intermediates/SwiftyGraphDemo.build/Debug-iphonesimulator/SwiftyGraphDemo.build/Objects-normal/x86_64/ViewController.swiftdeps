@@ -14,8 +14,8 @@ depends-top-level:
 - !private "Weight"
 - !private "GraphUnweighted"
 - !private "StringLiteralType"
-- "ViewController"
 - !private "Vertice"
+- "ViewController"
 depends-member:
 - !private ["Ps9AnyObject", "GraphUnweighted"]
 - !private ["Ps9AnyObject", "GraphWeighted"]
