@@ -21,7 +21,7 @@ extension Vertice: VerticeProtocol
         switch self {
             case .typeDefault(let id):
                 return id
-            case .typeCustom(let id, let metaData):
+            case .typeCustom(let id, _):
                 return id
         }
     }

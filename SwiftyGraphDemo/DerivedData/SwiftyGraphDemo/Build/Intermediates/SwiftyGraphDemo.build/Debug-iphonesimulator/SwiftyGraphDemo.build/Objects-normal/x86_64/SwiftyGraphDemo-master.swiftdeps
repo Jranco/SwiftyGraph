@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "f79e6f4c3627b4ceafa9110926c222e3"
-build_time: [536593313, 335779000]
+build_time: [536847415, 24699000]
 inputs:
-  "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/SwiftyGraphDemo/ViewController.swift": [536557062, 0]
+  "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/SwiftyGraphDemo/ViewController.swift": [536847398, 0]
   "/Users/thomas/Documents/Development/personal_projects/SwiftyGraph/SwiftyGraphDemo/SwiftyGraphDemo/AppDelegate.swift": [534888947, 0]

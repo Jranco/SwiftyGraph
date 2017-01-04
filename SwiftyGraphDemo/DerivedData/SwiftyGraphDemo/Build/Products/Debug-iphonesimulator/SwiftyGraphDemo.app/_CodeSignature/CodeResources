@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OgxQ8ssMparh3b3IjvaSMqU/JXw=
+			BhwKKqMguvvmu9w15nXH3Ia1d1g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tSXO7+kwv97TOdZXTCE4jgeZSGs=
+			eNeYN0HTQoniOIHMhmFETFkdbbw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HsEJKz1eCL+PsAQLL6uHTX9TH4w=
+			3xm9keN9sDcwhfIBdslCoKLCVLg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Evfk10YoD8vmnKoK6XNbDL2qTkI=
+			cmS4HVsms2nVPrHsERhmAxAn5e0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -64,7 +64,7 @@
 		</data>
 		<key>Frameworks/SwiftyGraph.framework/SwiftyGraph</key>
 		<data>
-		w7zYugOfZush+dS04zzryXPR+oM=
+		qfJEevVfa+G1TpLMqtEAyPJRJ5Q=
 		</data>
 		<key>Frameworks/SwiftyGraph.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -74,10 +74,6 @@
 		<data>
 		blagc+UjPVBTHaTHbrlBKbVn20I=
 		</data>
-		<key>Frameworks/libswiftCoreAudio.dylib</key>
-		<data>
-		rDzJs1nU4Z8U2a0rknvoLZ5LEO4=
-		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
 		ZwEZ2UKWKCWUP8IzyKJascCU0+g=
@@ -85,10 +81,6 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		kczkyFkTsCEEfoO5GHHQIgCOuAU=
-		</data>
-		<key>Frameworks/libswiftCoreMedia.dylib</key>
-		<data>
-		Ga30qH+StVOyoSgBBtTYnGBsa8k=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -118,10 +110,6 @@
 		<data>
 		AA0v+jaj04fmfPqsLDKMF0ahBEo=
 		</data>
-		<key>Frameworks/libswiftos.dylib</key>
-		<data>
-		3pGIqKcGBe5aYb7UlzMBucLGukM=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		zWhm4S0ikWI+UKl5416Iou1ssMM=
@@ -141,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OgxQ8ssMparh3b3IjvaSMqU/JXw=
+			BhwKKqMguvvmu9w15nXH3Ia1d1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			P68jgKdg1o9hh+UD1Va39UDsUs2m8akqFowSqzNA6m8=
+			EePu5Zjqn9/pILe0qPREhi+ejG3RI8afWfcNykfsYLs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -167,11 +155,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tSXO7+kwv97TOdZXTCE4jgeZSGs=
+			eNeYN0HTQoniOIHMhmFETFkdbbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ndE2vFaVrVJa7tReHU7Vvxc9TcNEIco5lNkDM1NvFU=
+			TRo2js5wfw23UU42uN++Ptq0iZSsa/5t1Wor/fo8M9o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,11 +168,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HsEJKz1eCL+PsAQLL6uHTX9TH4w=
+			3xm9keN9sDcwhfIBdslCoKLCVLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TbiQOZF92whPF97YbaGGc8HKAzZaJlkgkR7sBoQmYTc=
+			m7lBvEwMZQE5UGskprBpkk1faWDoG6/XlKxEFK3psfQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Evfk10YoD8vmnKoK6XNbDL2qTkI=
+			cmS4HVsms2nVPrHsERhmAxAn5e0=
 			</data>
 			<key>hash2</key>
 			<data>
-			iIV0DQJnN1IgHCCbRnH+um0KawnA55PDvHkLhUXlsJc=
+			pmnJQINstMdDyybMGNjutrxdclD9U7zGrRaK9Imiusk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -230,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w7zYugOfZush+dS04zzryXPR+oM=
+			qfJEevVfa+G1TpLMqtEAyPJRJ5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			CYYiwJYLBGn4AwWnjgn6sMQT8vlNoPaCz6YsRtbPMmw=
+			71Ndmyw+4iFC8ROXV5mT8ijtYL93mvP86XZ2aAerS6c=
 			</data>
 		</dict>
 		<key>Frameworks/SwiftyGraph.framework/_CodeSignature/CodeResources</key>
@@ -259,17 +247,6 @@
 			xo8sgCnm+oo5/jDmzTfasJiLCmh9N+4xlZRm3RyI/i0=
 			</data>
 		</dict>
-		<key>Frameworks/libswiftCoreAudio.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rDzJs1nU4Z8U2a0rknvoLZ5LEO4=
-			</data>
-			<key>hash2</key>
-			<data>
-			i64MdQ0dZeY+5K82sCrSM1cPl9u9p3o5Urugv5u8B8M=
-			</data>
-		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -290,17 +267,6 @@
 			<key>hash2</key>
 			<data>
 			FnvDmgNFr2JomOicwx+7EKcBGQdHHuJ5gh2aixoStCM=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreMedia.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ga30qH+StVOyoSgBBtTYnGBsa8k=
-			</data>
-			<key>hash2</key>
-			<data>
-			UJGpN/PA5nDMiWEKGyf9R2TjGpBn/rRG1TczqUh32gU=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
@@ -378,17 +344,6 @@
 			<key>hash2</key>
 			<data>
 			ThQ3KVRv0n/Z7aDaVS1UKV3XtUQaXCz3KLm50pf6ty8=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftos.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3pGIqKcGBe5aYb7UlzMBucLGukM=
-			</data>
-			<key>hash2</key>
-			<data>
-			LtcKRthlwopiSpRsPPza7t7nRkfzLry8PHNzyeHDJX8=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

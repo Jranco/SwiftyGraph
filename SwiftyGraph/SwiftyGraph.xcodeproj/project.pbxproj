@@ -24,6 +24,7 @@
 		E972576D1E0BBD4200180714 /* SwiftyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575C1E0BBD4200180714 /* SwiftyGraph.swift */; };
 		E972576E1E0BBD4200180714 /* Vertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575E1E0BBD4200180714 /* Vertice.swift */; };
 		E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257601E0BBD4200180714 /* VerticeProtocol.swift */; };
+		E98BC2391E1AEC330085F044 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98BC2381E1AEC330085F044 /* Dijkstra.swift */; };
 		E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E882E01E196E290078E2CD /* VerticeMetaData.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		E972575C1E0BBD4200180714 /* SwiftyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGraph.swift; sourceTree = "<group>"; };
 		E972575E1E0BBD4200180714 /* Vertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertice.swift; sourceTree = "<group>"; };
 		E97257601E0BBD4200180714 /* VerticeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeProtocol.swift; sourceTree = "<group>"; };
+		E98BC2381E1AEC330085F044 /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		E9E882E01E196E290078E2CD /* VerticeMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeMetaData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				E972574A1E0BBD4200180714 /* Edge */,
 				E97257501E0BBD4200180714 /* Graph */,
 				E972575D1E0BBD4200180714 /* Vertice */,
+				E98BC2351E1AEC140085F044 /* Algorithms */,
 				E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */,
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
 			);
@@ -177,6 +180,30 @@
 				E97257601E0BBD4200180714 /* VerticeProtocol.swift */,
 			);
 			path = Vertice;
+			sourceTree = "<group>";
+		};
+		E98BC2351E1AEC140085F044 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				E98BC2361E1AEC140085F044 /* Shortest Path */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		E98BC2361E1AEC140085F044 /* Shortest Path */ = {
+			isa = PBXGroup;
+			children = (
+				E98BC2371E1AEC140085F044 /* Dijkstra */,
+			);
+			path = "Shortest Path";
+			sourceTree = "<group>";
+		};
+		E98BC2371E1AEC140085F044 /* Dijkstra */ = {
+			isa = PBXGroup;
+			children = (
+				E98BC2381E1AEC330085F044 /* Dijkstra.swift */,
+			);
+			path = Dijkstra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +324,7 @@
 				E97257641E0BBD4200180714 /* WeightProtocol.swift in Sources */,
 				E9E882E11E196E290078E2CD /* VerticeMetaData.swift in Sources */,
 				E972576A1E0BBD4200180714 /* GraphProtocol.swift in Sources */,
+				E98BC2391E1AEC330085F044 /* Dijkstra.swift in Sources */,
 				E97257671E0BBD4200180714 /* DirectionType.swift in Sources */,
 				E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */,
 				E97257651E0BBD4200180714 /* WeightType.swift in Sources */,
