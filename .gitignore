@@ -9,7 +9,7 @@
 ## Build generated
 build/
 SwiftyGraphDemo/DerivedData/
-SwiftyGraphDemo/DerivedData/
+SwiftyGraph/DerivedData/
 
 ## Various settings
 *.pbxuser
