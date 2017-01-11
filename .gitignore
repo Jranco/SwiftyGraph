@@ -39,6 +39,8 @@ xcuserdata/
 
 ## Other
 *.xcuserstate
+SwiftyGraphDemo/*.xcuserstate
+SwiftyGraph/*.xcuserstate
 
 ## Obj-C/Swift specific
 *.hmap
