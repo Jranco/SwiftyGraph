@@ -16,7 +16,7 @@ protocol GraphProtocol: class
     
     init(direction: DirectionType)
     
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight)
+    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType)
     func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
     func addVertice(vertice: VerticeProtocol)
@@ -24,7 +24,7 @@ protocol GraphProtocol: class
 
 extension GraphProtocol
 {
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight)
+    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
     {
         let edge = Edge.weighted(direction, weight)
         

@@ -10,13 +10,13 @@ import Foundation
 
 public enum Edge
 {
-    case weighted(DirectionType, Weight)
+    case weighted(DirectionType, Weight<Any>)
     case unweighted(DirectionType)
 }
 
 extension Edge: EdgeProtocol
 {
-    public var weight: Weight?{
+    public var weight: Weight<Any>?{
     
         switch self {
             case .weighted( _, let weight):

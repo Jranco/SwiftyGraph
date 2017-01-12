@@ -10,5 +10,5 @@ import Foundation
 
 protocol EdgeProtocol
 {
-    var weight: Weight?{get}    
+    var weight: Weight<Any>?{get}    
 }

@@ -8,10 +8,10 @@
 
 import Foundation
 
-public enum Vertice
+public enum Vertice<T>
 {
-    case typeDefault(id: String)
-    case typeCustom(id: String, metaData: VerticeMetaData)
+    case `default`(id: String)
+    case custom(id: String, data: T)
 }
 
 extension Vertice: VerticeProtocol
@@ -19,9 +19,9 @@ extension Vertice: VerticeProtocol
     public var identifier: String?{
         
         switch self {
-            case .typeDefault(let id):
+            case .`default`(let id):
                 return id
-            case .typeCustom(let id, _):
+            case .custom(let id, _):
                 return id
         }
     }
