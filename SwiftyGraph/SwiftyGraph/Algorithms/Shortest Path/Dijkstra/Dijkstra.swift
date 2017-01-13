@@ -6,7 +6,6 @@
 //  Copyright © 2017 Thomas Segkoulis. All rights reserved.
 //
 
-import Foundation
 
 extension GraphWeighted
 {
