@@ -16,55 +16,55 @@ protocol GraphProtocol: class
     
     init(direction: DirectionType)
     
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType)
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, edge: Edge)
     func addVertice(vertice: VerticeProtocol)
 }
 
 extension GraphProtocol
 {
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
     {
         let edge = Edge.weighted(direction, weight)
         
-        addEdge(origin: origin, destination: destination, edge: edge)
+        addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjDictionary[destination.identifier!]?[origin.identifier!] == nil)
+        if(direction == .undirected && adjDictionary[verticeB.identifier!]?[verticeA.identifier!] == nil)
         {
-            addEdge(origin: destination, destination: origin, direction: direction, weight: weight)
+            addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction, weight: weight)
         }
     }
     
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, direction: DirectionType)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType)
     {
         let edge = Edge.unweighted(direction)
         
-        addEdge(origin: origin, destination: destination, edge: edge)
+        addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjDictionary[destination.identifier!]?[origin.identifier!] == nil)
+        if(direction == .undirected && adjDictionary[verticeB.identifier!]?[verticeA.identifier!] == nil)
         {
-            addEdge(origin: destination, destination: origin, direction: direction)
+            addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction)
         }
     }
     
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, edge: Edge)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, edge: Edge)
     {
         // Add edge
         var nearbyDictionary: [String: EdgeProtocol] = [:]
         
-        if(adjDictionary[origin.identifier!] != nil)
+        if(adjDictionary[verticeA.identifier!] != nil)
         {
-            nearbyDictionary = adjDictionary[origin.identifier!]!
+            nearbyDictionary = adjDictionary[verticeA.identifier!]!
             
         }
         
-        nearbyDictionary[destination.identifier!]  = edge
-        adjDictionary[origin.identifier!]          = nearbyDictionary
+        nearbyDictionary[verticeB.identifier!]  = edge
+        adjDictionary[verticeA.identifier!]          = nearbyDictionary
         
         // Add vertice
-        self.addVertice(vertice: origin)
-        self.addVertice(vertice: destination)
+        self.addVertice(vertice: verticeA)
+        self.addVertice(vertice: verticeB)
         
     }
     

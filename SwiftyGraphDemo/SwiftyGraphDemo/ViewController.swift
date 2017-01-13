@@ -17,23 +17,23 @@ class ViewController: UIViewController {
         
         let myWeightedGraph = GraphWeighted.init(direction: .undirected)
         
-        let vThree = Vertice<String>.default(id: "three")
+        let vThree = Vertice<Any>.default(id: "three")
         let vOne   = Vertice<Any>.default(id: "one")
         let vTwo   = Vertice<Any>.default(id: "two")
         let vFour  = Vertice<Any>.default(id: "four")
         let vFive  = Vertice<Any>.default(id: "five")
         let vSix   = Vertice<Any>.default(id: "six")
         
-        myWeightedGraph.addEdge(origin: vOne, destination: vTwo, weight: Weight.default(value: 7))
-        myWeightedGraph.addEdge(origin: vOne, destination: vThree, weight: Weight.default(value: 9))
-        myWeightedGraph.addEdge(origin: vOne, destination: vSix, weight: Weight.default(value: 14))
-        myWeightedGraph.addEdge(origin: vSix, destination: vThree, weight: Weight.default(value: 2))
-        myWeightedGraph.addEdge(origin: vSix, destination: vFive, weight: Weight.default(value: 9))
-        myWeightedGraph.addEdge(origin: vThree, destination: vFour, weight: Weight.default(value: 11))
-        myWeightedGraph.addEdge(origin: vTwo, destination: vFour, weight: Weight.default(value: 15))
-        myWeightedGraph.addEdge(origin: vFour, destination: vFive, weight: Weight.default(value: 6))
+        myWeightedGraph.addEdge(verticeA: vOne, verticeB: vTwo, weight: Weight.default(value: 7))
+        myWeightedGraph.addEdge(verticeA: vOne, verticeB: vThree, weight: Weight.default(value: 9))
+        myWeightedGraph.addEdge(verticeA: vOne, verticeB: vSix, weight: Weight.default(value: 14))
+        myWeightedGraph.addEdge(verticeA: vSix, verticeB: vThree, weight: Weight.default(value: 2))
+        myWeightedGraph.addEdge(verticeA: vSix, verticeB: vFive, weight: Weight.default(value: 9))
+        myWeightedGraph.addEdge(verticeA: vThree, verticeB: vFour, weight: Weight.default(value: 11))
+        myWeightedGraph.addEdge(verticeA: vTwo, verticeB: vFour, weight: Weight.default(value: 15))
+        myWeightedGraph.addEdge(verticeA: vFour, verticeB: vFive, weight: Weight.default(value: 6))
 
-        myWeightedGraph.addEdge(origin: vFour, destination: vFive, weight: Weight.custom(value: 3, data: vSix))
+        myWeightedGraph.addEdge(verticeA: vFour, verticeB: vFive, weight: Weight.custom(value: 3, data: vSix))
         
         myWeightedGraph.printVertices()
         
@@ -54,9 +54,9 @@ class ViewController: UIViewController {
         let vOneUW = Vertice<Any>.default(id: "one")
         let vTwoUW = Vertice<Any>.default(id: "two")
         
-        myUnweightedGraph.addEdge(origin: vZeroUW, destination: vOneUW)
-        myUnweightedGraph.addEdge(origin: vTwoUW, destination: vOneUW)
-        myUnweightedGraph.addEdge(origin: vZeroUW, destination: vTwoUW)
+        myUnweightedGraph.addEdge(verticeA: vZeroUW, verticeB: vOneUW)
+        myUnweightedGraph.addEdge(verticeA: vTwoUW, verticeB: vOneUW)
+        myUnweightedGraph.addEdge(verticeA: vZeroUW, verticeB: vTwoUW)
         myUnweightedGraph.printVertices()
         
         myUnweightedGraph.printGraph()

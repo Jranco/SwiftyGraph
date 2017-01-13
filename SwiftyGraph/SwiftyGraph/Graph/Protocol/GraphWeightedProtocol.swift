@@ -10,13 +10,13 @@ import Foundation
 
 protocol GraphWeightedProtocol: GraphProtocol
 {
-    func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight<Any>)
+    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, weight: Weight<Any>)
 }
 
 extension GraphWeightedProtocol
 {
-    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight<Any>)
+    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, weight: Weight<Any>)
     {
-        addEdge(origin: origin, destination: destination, direction: self.direction, weight: weight)
+        addEdge(verticeA: verticeA, verticeB: verticeB, direction: self.direction, weight: weight)
     }
 }

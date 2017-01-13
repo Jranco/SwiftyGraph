@@ -46,8 +46,8 @@ extension GraphUnweighted
         }
     }
     
-    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol)
-    {
-        (self as GraphUnweightedProtocol).addEdge(origin: origin, destination: destination)
-    }
+//    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol)
+//    {
+//        (self as GraphUnweighted).addEdge(verticeA: verticeA, verticeB: verticeB)
+//    }
 }
