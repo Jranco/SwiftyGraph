@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         myWeightedGraph.addEdge(origin: vTwo, destination: vFour, weight: Weight.default(value: 15))
         myWeightedGraph.addEdge(origin: vFour, destination: vFive, weight: Weight.default(value: 6))
 
+        myWeightedGraph.addEdge(origin: vFour, destination: vFive, weight: Weight.custom(value: 3, data: vSix))
         
         myWeightedGraph.printVertices()
         
@@ -56,7 +57,6 @@ class ViewController: UIViewController {
         myUnweightedGraph.addEdge(origin: vZeroUW, destination: vOneUW)
         myUnweightedGraph.addEdge(origin: vTwoUW, destination: vOneUW)
         myUnweightedGraph.addEdge(origin: vZeroUW, destination: vTwoUW)
-        
         myUnweightedGraph.printVertices()
         
         myUnweightedGraph.printGraph()

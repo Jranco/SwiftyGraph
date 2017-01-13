@@ -45,4 +45,9 @@ extension GraphWeighted
             print("vertice: id", vertice.key)
         }
     }
+    
+    public func addEdge(origin: VerticeProtocol, destination: VerticeProtocol, weight: Weight<Any>)
+    {
+        (self as GraphWeightedProtocol).addEdge(origin: origin, destination: destination, weight: weight)
+    }
 }
