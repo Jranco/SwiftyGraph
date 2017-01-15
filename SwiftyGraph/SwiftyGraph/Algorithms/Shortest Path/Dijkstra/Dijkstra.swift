@@ -25,7 +25,7 @@ extension GraphWeighted
         var prev: [String: VerticeProtocol] = [:]
         
         /// Add all vertices to the unvisitedVertex Set
-        for v in vertices
+        for v in verticeDictionary
         {
             unvisitedVertex.insert(v.key)
         }
@@ -50,7 +50,7 @@ extension GraphWeighted
                     let alt = distance[minDistVertex]! + (edge.weight?.value)!
 
                     distance[v] = alt
-                    prev[v] = vertices[minDistVertex]
+                    prev[v] = verticeDictionary[minDistVertex]
                 }
                 else
                 {
@@ -59,7 +59,7 @@ extension GraphWeighted
                     if(alt < distance[v]!)
                     {
                         distance[v] = alt
-                        prev[v] = vertices[minDistVertex]
+                        prev[v] = verticeDictionary[minDistVertex]
                     }
                 }
             }

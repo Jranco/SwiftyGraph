@@ -8,12 +8,7 @@
 
 import Foundation
 
-public class GraphUnweighted: GraphBase
-{
-    
-}
-
-extension GraphUnweighted: GraphUnweightedProtocol
+public class GraphUnweighted: GraphBase, GraphUnweightedProtocol
 {
     public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol)
     {

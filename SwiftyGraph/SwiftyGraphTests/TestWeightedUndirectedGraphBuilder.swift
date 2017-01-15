@@ -22,6 +22,8 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
     var verticeC: Vertice<Any>!
     var verticeD: Vertice<Any>!
     var verticeE: Vertice<Any>!
+    
+    var localVerticeArray: [VerticeProtocol] = []
 
     // MARK: - Setup -
 
@@ -45,6 +47,8 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
         verticeC = Vertice<Any>.default(id: "C")
         verticeD = Vertice<Any>.default(id: "D")
         verticeE = Vertice<Any>.default(id: "E")
+        
+        localVerticeArray = [verticeA, verticeB, verticeC, verticeD, verticeE]
         
         /**
          Add edges in Graph
@@ -119,6 +123,26 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
     
     func testCorrectAssignmentOfVertices()
     {
+        // Check if 'existsVertice' function is working correctly, checking existence of vertice inside verticeDictionary
+        for vertice in localVerticeArray
+        {
+            if(!undirectedGraph.existsVertice(vertice: vertice))
+            {
+                XCTAssert(false, "Error: Vertice doesn't exist")
+            }
+        }
+        
+        // Check if 'verticeArray' contains all vertices
+        
+        guard localVerticeArray.count == undirectedGraph.verticeArray.count else {
+            XCTAssert(false, "Error: Vertice doesn't exist")
+            return
+        }
+
+        // TODO compare two arrays
+        
+        XCTAssert(true)
+
     }
     
     func testDijkstraCorrectPath()

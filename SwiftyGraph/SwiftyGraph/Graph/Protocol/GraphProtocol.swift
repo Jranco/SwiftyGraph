@@ -13,7 +13,8 @@ protocol GraphProtocol: class
     // MARK: - Properties -
 
     var adjacency: [String: [String:EdgeProtocol]] {set get}
-    var vertices: [String: VerticeProtocol] {set get}
+    var verticeDictionary: [String: VerticeProtocol] {set get}
+    var verticeArray: [VerticeProtocol] {get}
     var direction: DirectionType {set get}
     
     // MARK: - Init method -
@@ -30,6 +31,11 @@ protocol GraphProtocol: class
     // MARK: - Functions to be implemented by class conforming to this protocol -
     
     func existsEdge(from verticeA: VerticeProtocol,to  verticeB: VerticeProtocol) -> Bool
+    func existsVertice(vertice: VerticeProtocol) -> Bool
+    
+    // MARK: - Adjacency -
+    
+    // MARK: - Path -
 }
 
 // MARK: - GraphProtocol Extension -
@@ -84,13 +90,8 @@ extension GraphProtocol
     
     func addVertice(vertice: VerticeProtocol)
     {
-        vertices[vertice.identifier!] = vertice
+        verticeDictionary[vertice.identifier!] = vertice
     }
-    
-    // MARK: - Adjacency -
-    
-    // MARK: - Path -
-
 
 }
 
