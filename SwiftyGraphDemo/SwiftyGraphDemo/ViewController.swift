@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         let vFive  = Vertice<Any>.default(id: "five")
         let vSix   = Vertice<Any>.default(id: "six")
         
+            
         myWeightedGraph.addEdge(verticeA: vOne, verticeB: vTwo, weight: Weight.default(value: 7))
         myWeightedGraph.addEdge(verticeA: vOne, verticeB: vThree, weight: Weight.default(value: 9))
         myWeightedGraph.addEdge(verticeA: vOne, verticeB: vSix, weight: Weight.default(value: 14))
@@ -34,10 +35,6 @@ class ViewController: UIViewController {
         myWeightedGraph.addEdge(verticeA: vFour, verticeB: vFive, weight: Weight.default(value: 6))
 
         myWeightedGraph.addEdge(verticeA: vFour, verticeB: vFive, weight: Weight.custom(value: 3, data: vSix))
-        
-        myWeightedGraph.printVertices()
-        
-        myWeightedGraph.printGraph()
         
         myWeightedGraph.dijkstra(source: vOne, destination: vFive)
         {
@@ -57,9 +54,7 @@ class ViewController: UIViewController {
         myUnweightedGraph.addEdge(verticeA: vZeroUW, verticeB: vOneUW)
         myUnweightedGraph.addEdge(verticeA: vTwoUW, verticeB: vOneUW)
         myUnweightedGraph.addEdge(verticeA: vZeroUW, verticeB: vTwoUW)
-        myUnweightedGraph.printVertices()
         
-        myUnweightedGraph.printGraph()
     }
 
     override func didReceiveMemoryWarning()

@@ -39,11 +39,11 @@ extension GraphWeighted
             
             unvisitedVertex.remove(minDistVertex)
             
-            guard adjDictionary[minDistVertex] != nil else {
+            guard adjacency[minDistVertex] != nil else {
                 continue
             }
             
-            for (v, edge) in adjDictionary[minDistVertex]!
+            for (v, edge) in adjacency[minDistVertex]!
             {
                 if(distance[v] == nil)
                 {

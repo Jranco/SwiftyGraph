@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol EdgeProtocol
+public protocol EdgeProtocol
 {
     var weight: Weight<Any>?{get}    
 }

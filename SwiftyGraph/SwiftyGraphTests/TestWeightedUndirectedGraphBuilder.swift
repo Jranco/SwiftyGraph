@@ -13,15 +13,15 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
 {
     // MARK: - Graph -
     
-    var undirectedGraph: GraphWeighted?
+    var undirectedGraph: GraphWeighted!
 
     // MARK: - Vertices -
     
-    var verticeA: Vertice<Any>
-    var verticeB: Vertice<Any>
-    var verticeC: Vertice<Any>
-    var verticeD: Vertice<Any>
-    var verticeE: Vertice<Any>
+    var verticeA: Vertice<Any>!
+    var verticeB: Vertice<Any>!
+    var verticeC: Vertice<Any>!
+    var verticeD: Vertice<Any>!
+    var verticeE: Vertice<Any>!
 
     // MARK: - Setup -
 
@@ -34,6 +34,7 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
          */
         
         undirectedGraph = GraphWeighted.init(direction: .undirected)
+
 
         /**
          Init Vertices
@@ -48,10 +49,15 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
         /**
          Add edges in Graph
          */
-        undirectedGraph?.addEdge(verticeA: verticeA, verticeB: verticeB, weight: Weight<Any>.default(value: 3))
-        undirectedGraph?.addEdge(verticeA: verticeA, verticeB: verticeD, weight: Weight<Any>.default(value: 7))
-        undirectedGraph?.addEdge(verticeA: verticeB, verticeB: verticeD, weight: Weight<Any>.default(value: 2))
-        undirectedGraph?.addEdge(verticeA: verticeB, verticeB: verticeC, weight: Weight<Any>.default(value: 4))
+        
+        let unweightedGraph = GraphUnweighted.init(direction: .undirected)
+        
+        unweightedGraph.addEdge(verticeA: verticeC, verticeB: verticeB)
+        
+        undirectedGraph?.addEdge(verticeA: verticeA!, verticeB: verticeB!, weight: Weight<Any>.default(value: 3))
+        undirectedGraph?.addEdge(verticeA: verticeA!, verticeB: verticeD!, weight: Weight<Any>.default(value: 7))
+        undirectedGraph?.addEdge(verticeA: verticeB!, verticeB: verticeD!, weight: Weight<Any>.default(value: 2))
+        undirectedGraph?.addEdge(verticeA: verticeB, verticeB: verticeC!, weight: Weight<Any>.default(value: 4))
         undirectedGraph?.addEdge(verticeA: verticeD, verticeB: verticeC, weight: Weight<Any>.default(value: 5))
         undirectedGraph?.addEdge(verticeA: verticeD, verticeB: verticeE, weight: Weight<Any>.default(value: 4))
         undirectedGraph?.addEdge(verticeA: verticeC, verticeB: verticeE, weight: Weight<Any>.default(value: 6))
@@ -69,10 +75,46 @@ class TestWeightedUndirectedGraphBuilder: XCTestCase
 
     func testExistenceOfInverseEdge()
     {
+        for (verticeA, nearby) in (undirectedGraph?.adjacency)!
+        {
+            
+            for (verticeB, _) in nearby
+            {
+                
+                if(undirectedGraph?.adjacency[verticeB]?[verticeA] == nil)
+                {
+                    XCTAssert(false, "Error: Inverse edge doesn't exist")
+                }
+            }
+        }
     }
     
     func testCorrectAssignmentOfEdges()
     {
+        if (undirectedGraph.existsEdge(from: verticeA, to: verticeB) &&
+            undirectedGraph.existsEdge(from: verticeA, to: verticeD) &&
+            undirectedGraph.existsEdge(from: verticeB, to: verticeD) &&
+            undirectedGraph.existsEdge(from: verticeB, to: verticeC) &&
+            undirectedGraph.existsEdge(from: verticeD, to: verticeC) &&
+            undirectedGraph.existsEdge(from: verticeD, to: verticeE) &&
+            undirectedGraph.existsEdge(from: verticeC, to: verticeE))
+        {
+            if (!undirectedGraph.existsEdge(from: verticeA, to: verticeC) &&
+                !undirectedGraph.existsEdge(from: verticeA, to: verticeE) &&
+                !undirectedGraph.existsEdge(from: verticeB, to: verticeE) &&
+                !undirectedGraph.existsEdge(from: verticeC, to: verticeA))
+            {
+                XCTAssert(true)
+            }
+            else
+            {
+                XCTAssert(false, "Error: Edge doesn't exist")
+            }
+        }
+        else
+        {
+            XCTAssert(false, "Error: Edge doesn't exist")
+        }
     }
     
     func testCorrectAssignmentOfVertices()

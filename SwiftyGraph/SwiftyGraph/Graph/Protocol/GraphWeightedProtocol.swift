@@ -8,15 +8,9 @@
 
 import Foundation
 
-protocol GraphWeightedProtocol: GraphProtocol
+public protocol GraphWeightedProtocol
 {
     func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, weight: Weight<Any>)
 }
 
-extension GraphWeightedProtocol
-{
-    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, weight: Weight<Any>)
-    {
-        addEdge(verticeA: verticeA, verticeB: verticeB, direction: self.direction, weight: weight)
-    }
-}
+

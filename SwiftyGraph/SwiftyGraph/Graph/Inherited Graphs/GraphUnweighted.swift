@@ -8,46 +8,15 @@
 
 import Foundation
 
-public class GraphUnweighted: GraphUnweightedProtocol
+public class GraphUnweighted: GraphBase
 {
-    var adjDictionary: [String: [String:EdgeProtocol]] = [:]
-    var vertices: [String: VerticeProtocol] = [:]
-    public internal(set) var direction: DirectionType = .directed
     
-    
-    required public init(direction: DirectionType)
-    {
-        self.direction = direction
-    }
 }
 
-extension GraphUnweighted
+extension GraphUnweighted: GraphUnweightedProtocol
 {
-    public func printGraph()
+    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol)
     {
-        for (vId, nearby) in adjDictionary
-        {
-            print("for vId: \(vId)")
-            
-            for (vId, edge) in nearby
-            {
-                print("nearby vId: \(vId)")
-                print("nearby edge weight: \(edge.weight?.value)")
-            }
-            
-        }
+        addEdge(verticeA: verticeA, verticeB: verticeB, direction: self.direction)
     }
-    
-    public func printVertices()
-    {
-        for vertice in vertices
-        {
-            print("vertice: id", vertice.key)
-        }
-    }
-    
-//    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol)
-//    {
-//        (self as GraphUnweighted).addEdge(verticeA: verticeA, verticeB: verticeB)
-//    }
 }

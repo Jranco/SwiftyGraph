@@ -10,27 +10,41 @@ import Foundation
 
 protocol GraphProtocol: class
 {
-    var adjDictionary: [String: [String:EdgeProtocol]] {set get}
+    // MARK: - Properties -
+
+    var adjacency: [String: [String:EdgeProtocol]] {set get}
     var vertices: [String: VerticeProtocol] {set get}
     var direction: DirectionType {set get}
     
+    // MARK: - Init method -
+
     init(direction: DirectionType)
     
+    // MARK: - Functions with default implementation -
+
     func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
     func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType)
     func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, edge: Edge)
     func addVertice(vertice: VerticeProtocol)
+    
+    // MARK: - Functions to be implemented by class conforming to this protocol -
+    
+    func existsEdge(from verticeA: VerticeProtocol,to  verticeB: VerticeProtocol) -> Bool
 }
+
+// MARK: - GraphProtocol Extension -
 
 extension GraphProtocol
 {
+    // MARK: - Add Edges & Vertices -
+    
     func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
     {
         let edge = Edge.weighted(direction, weight)
         
         addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjDictionary[verticeB.identifier!]?[verticeA.identifier!] == nil)
+        if(direction == .undirected && adjacency[verticeB.identifier!]?[verticeA.identifier!] == nil)
         {
             addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction, weight: weight)
         }
@@ -42,7 +56,7 @@ extension GraphProtocol
         
         addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjDictionary[verticeB.identifier!]?[verticeA.identifier!] == nil)
+        if(direction == .undirected && adjacency[verticeB.identifier!]?[verticeA.identifier!] == nil)
         {
             addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction)
         }
@@ -53,14 +67,14 @@ extension GraphProtocol
         // Add edge
         var nearbyDictionary: [String: EdgeProtocol] = [:]
         
-        if(adjDictionary[verticeA.identifier!] != nil)
+        if(adjacency[verticeA.identifier!] != nil)
         {
-            nearbyDictionary = adjDictionary[verticeA.identifier!]!
+            nearbyDictionary = adjacency[verticeA.identifier!]!
             
         }
         
         nearbyDictionary[verticeB.identifier!]  = edge
-        adjDictionary[verticeA.identifier!]          = nearbyDictionary
+        adjacency[verticeA.identifier!]          = nearbyDictionary
         
         // Add vertice
         self.addVertice(vertice: verticeA)
@@ -72,6 +86,11 @@ extension GraphProtocol
     {
         vertices[vertice.identifier!] = vertice
     }
+    
+    // MARK: - Adjacency -
+    
+    // MARK: - Path -
+
 
 }
 
