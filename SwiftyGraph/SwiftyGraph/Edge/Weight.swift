@@ -25,4 +25,14 @@ extension Weight: WeightProtocol
             return value
         }
     }
+    
+    public var associatedData: T? {
+        
+        switch self {
+        case .`default`(let id):
+            return nil
+        case .custom(let id, let data):
+            return data
+        }
+    }
 }
