@@ -1,6 +1,6 @@
 {
   "name": "SwiftyGraph",
-  "version": "0.1",
+  "version": "0.2",
   "summary": "A graph data structure implemented for swift",
   "description": "SwiftyGraph",
   "homepage": "https://github.com/Jranco/SwiftyGraph.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Jranco/SwiftyGraph.git",
-    "tag": "0.1"
+    "tag": "0.2"
   },
   "platforms": {
     "ios": "9.0"

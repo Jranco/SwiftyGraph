@@ -29,9 +29,9 @@ extension Weight: WeightProtocol
     public var associatedData: T? {
         
         switch self {
-        case .`default`(let id):
+        case .`default`( _):
             return nil
-        case .custom(let id, let data):
+        case .custom( _, let data):
             return data
         }
     }
