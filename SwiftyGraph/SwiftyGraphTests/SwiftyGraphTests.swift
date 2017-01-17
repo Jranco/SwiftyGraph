@@ -2,7 +2,7 @@
 //  SwiftyGraphTests.swift
 //  SwiftyGraphTests
 //
-//  Created by Thomas Segkoulis on 13/01/17.
+//  Created by Thomas Segkoulis on 17/01/17.
 //  Copyright © 2017 Thomas Segkoulis. All rights reserved.
 //
 

@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "E90F4BA51DFF3C290095C28C"
                BuildableName = "SwiftyGraph.framework"
                BlueprintName = "SwiftyGraph"
+               ReferencedContainer = "container:SwiftyGraph.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E96959801E2EBD610086FDF3"
+               BuildableName = "SwiftyGraphTests.xctest"
+               BlueprintName = "SwiftyGraphTests"
                ReferencedContainer = "container:SwiftyGraph.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

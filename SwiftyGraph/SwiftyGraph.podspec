@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftyGraph"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "A graph data structure implemented for swift"
   s.description  = "SwiftyGraph"
   s.homepage     = "https://github.com/Jranco/SwiftyGraph.git"
