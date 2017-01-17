@@ -16,7 +16,7 @@ SwiftyGraph is a flexible library written in Swift containing an initial represe
 
 ## Basic Components
 
-This library provides two main types of Graphs, **GraphUnweighted** and **GraphUnweighted** representing unweighted and weighted Graphs respectively. Both of these share the same codebase along with the required abstraction and can be initialised as **Directed** or **Undirected** during initialisation.
+This library provides two main types of Graphs, **GraphUnweighted** and **GraphUnweighted** representing unweighted and weighted Graphs respectively. Both of these share the same codebase along with the required abstraction and can be initialised as **Directed** or **Undirected**.
 
 ### Graph
 
