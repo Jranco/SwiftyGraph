@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class GraphBase: GraphProtocol
+public class GraphBase<VerticeType>: GraphProtocol where VerticeType: Hashable, VerticeType: Comparable
 {
-    public internal(set) var adjacency: [String: [String:EdgeProtocol]] = [:]
-    public internal(set) var verticeDictionary: [String: VerticeProtocol] = [:]
-    public var verticeArray: [VerticeProtocol] {
+    public internal(set) var adjacency: [VerticeType: [VerticeType:EdgeProtocol]] = [:]
+    public internal(set) var verticeDictionary: [VerticeType: VerticeType] = [:]
+    public var verticeArray: [VerticeType] {
 
         get {
 
-            var vertices: [VerticeProtocol] = []
+            var vertices: [VerticeType] = []
 
             for (_, vertice) in verticeDictionary
             {
@@ -34,9 +34,22 @@ public class GraphBase: GraphProtocol
         self.direction = direction
     }
     
-    public func existsEdge(from verticeA: VerticeProtocol, to verticeB: VerticeProtocol) -> Bool
+    public func addVertice(vertice: VerticeType)
     {
-        if (adjacency[verticeA.identifier!]?[verticeB.identifier!] != nil)
+        verticeDictionary[vertice] = vertice
+    }
+    
+    public func addVertices(vertices: [VerticeType])
+    {
+        for vertice in vertices
+        {
+            addVertice(vertice: vertice)
+        }
+    }
+    
+    public func existsEdge(from verticeA: VerticeType, to verticeB: VerticeType) -> Bool
+    {
+        if (adjacency[verticeA]?[verticeB] != nil)
         {
             return true
         }
@@ -47,7 +60,7 @@ public class GraphBase: GraphProtocol
         {
             case .directed:
          
-                if ((adjacency[verticeA.identifier!]?[verticeB.identifier!] != nil))
+                if ((adjacency[verticeA]?[verticeB] != nil))
                 {
                     existsEdge = true
                 }
@@ -60,7 +73,7 @@ public class GraphBase: GraphProtocol
             
             case .undirected:
             
-                if ((adjacency[verticeA.identifier!]?[verticeB.identifier!] != nil) && (adjacency[verticeB.identifier!]?[verticeA.identifier!] != nil))
+                if ((adjacency[verticeA]?[verticeB] != nil) && (adjacency[verticeB]?[verticeA] != nil))
                 {
                     existsEdge = true
                 }
@@ -75,9 +88,9 @@ public class GraphBase: GraphProtocol
         return existsEdge
     }
     
-    public func existsVertice(vertice: VerticeProtocol) -> Bool
+    public func existsVertice(vertice: VerticeType) -> Bool
     {
-        if((verticeDictionary[vertice.identifier!]) != nil)
+        if((verticeDictionary[vertice]) != nil)
         {
             return true
         }

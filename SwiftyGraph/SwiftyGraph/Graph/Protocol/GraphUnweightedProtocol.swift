@@ -10,6 +10,8 @@ import Foundation
 
 public protocol GraphUnweightedProtocol
 {
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol)
+    associatedtype VerticeType: Hashable, Comparable
+
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType)
 }
 

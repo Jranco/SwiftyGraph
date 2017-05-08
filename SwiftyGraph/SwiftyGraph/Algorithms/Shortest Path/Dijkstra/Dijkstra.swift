@@ -9,29 +9,29 @@
 
 extension GraphWeighted
 {
-    public func dijkstra(source: VerticeProtocol, destination: VerticeProtocol, completion: (_ distance: Int, _ path: [VerticeProtocol]) -> Void)
+    public func dijkstra(source: VerticeType, destination: VerticeType, completion: (_ distance: Int, _ path: [VerticeType]) -> Void)
     {
         /**
             Unvisited Vertex set
          */
-        var unvisitedVertex = Set<String>()
+        var unvisitedVertex = Set<VerticeType>()
         
         /**
             Distances from source to Vertex
          */
-        var distance: [String: Int] = [:]
+        var distance: [VerticeType: Int] = [:]
 
         // Previous vertex
-        var prev: [String: VerticeProtocol] = [:]
+        var prev: [VerticeType: VerticeType] = [:]
         
         /// Add all vertices to the unvisitedVertex Set
         for v in verticeDictionary
         {
-            unvisitedVertex.insert(v.key)
+            unvisitedVertex.insert(v.value)
         }
         
         /// Init source distance to zero
-        distance[source.identifier!] = 0
+        distance[source] = 0
 
         while unvisitedVertex.isEmpty == false
         {
@@ -65,23 +65,23 @@ extension GraphWeighted
             }
         }
         
-        var path: [VerticeProtocol] = []
+        var path: [VerticeType] = []
         
         var currentVertice = destination
         
-        while currentVertice.identifier != source.identifier
+        while currentVertice != source
         {
             path.insert(currentVertice, at: 0)
-            currentVertice = prev[currentVertice.identifier!]!
+            currentVertice = prev[currentVertice]!
         }
         
         path.insert(source, at: 0)
 
-        completion(distance[destination.identifier!]!, path)
+        completion(distance[destination]!, path)
         
     }
     
-    func vertexWithMinDist(vertexDist: [String: Int], unvisitedVertex: Set<String>) -> String
+    func vertexWithMinDist(vertexDist: [VerticeType: Int], unvisitedVertex: Set<VerticeType>) -> VerticeType
     {
         var vertexDicNew = vertexDist
         

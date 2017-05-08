@@ -20,8 +20,6 @@
 		E972576B1E0BBD4200180714 /* GraphUnweightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575A1E0BBD4200180714 /* GraphUnweightedProtocol.swift */; };
 		E972576C1E0BBD4200180714 /* GraphWeightedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575B1E0BBD4200180714 /* GraphWeightedProtocol.swift */; };
 		E972576D1E0BBD4200180714 /* SwiftyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575C1E0BBD4200180714 /* SwiftyGraph.swift */; };
-		E972576E1E0BBD4200180714 /* Vertice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972575E1E0BBD4200180714 /* Vertice.swift */; };
-		E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97257601E0BBD4200180714 /* VerticeProtocol.swift */; };
 		E98BC2391E1AEC330085F044 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98BC2381E1AEC330085F044 /* Dijkstra.swift */; };
 		E9970B341E2AD11E005B6755 /* GraphBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9970B331E2AD11E005B6755 /* GraphBase.swift */; };
 /* End PBXBuildFile section */
@@ -42,8 +40,6 @@
 		E972575A1E0BBD4200180714 /* GraphUnweightedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphUnweightedProtocol.swift; sourceTree = "<group>"; };
 		E972575B1E0BBD4200180714 /* GraphWeightedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWeightedProtocol.swift; sourceTree = "<group>"; };
 		E972575C1E0BBD4200180714 /* SwiftyGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGraph.swift; sourceTree = "<group>"; };
-		E972575E1E0BBD4200180714 /* Vertice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertice.swift; sourceTree = "<group>"; };
-		E97257601E0BBD4200180714 /* VerticeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticeProtocol.swift; sourceTree = "<group>"; };
 		E98BC2381E1AEC330085F044 /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		E9970B331E2AD11E005B6755 /* GraphBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +76,6 @@
 			children = (
 				E97257501E0BBD4200180714 /* Graph */,
 				E972574A1E0BBD4200180714 /* Edge */,
-				E972575D1E0BBD4200180714 /* Vertice */,
 				E98BC2351E1AEC140085F044 /* Algorithms */,
 				E90F4BA91DFF3C290095C28C /* SwiftyGraph.h */,
 				E90F4BAA1DFF3C290095C28C /* Info.plist */,
@@ -137,15 +132,6 @@
 				E972575B1E0BBD4200180714 /* GraphWeightedProtocol.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		E972575D1E0BBD4200180714 /* Vertice */ = {
-			isa = PBXGroup;
-			children = (
-				E972575E1E0BBD4200180714 /* Vertice.swift */,
-				E97257601E0BBD4200180714 /* VerticeProtocol.swift */,
-			);
-			path = Vertice;
 			sourceTree = "<group>";
 		};
 		E98BC2351E1AEC140085F044 /* Algorithms */ = {
@@ -269,13 +255,11 @@
 				E9970B341E2AD11E005B6755 /* GraphBase.swift in Sources */,
 				E98BC2391E1AEC330085F044 /* Dijkstra.swift in Sources */,
 				E97257671E0BBD4200180714 /* DirectionType.swift in Sources */,
-				E97257701E0BBD4200180714 /* VerticeProtocol.swift in Sources */,
 				E97257651E0BBD4200180714 /* WeightType.swift in Sources */,
 				E97257621E0BBD4200180714 /* EdgeProtocol.swift in Sources */,
 				E97257611E0BBD4200180714 /* Edge.swift in Sources */,
 				E972576B1E0BBD4200180714 /* GraphUnweightedProtocol.swift in Sources */,
 				E97257631E0BBD4200180714 /* Weight.swift in Sources */,
-				E972576E1E0BBD4200180714 /* Vertice.swift in Sources */,
 				E97257681E0BBD4200180714 /* GraphUnweighted.swift in Sources */,
 				E97257691E0BBD4200180714 /* GraphWeighted.swift in Sources */,
 			);

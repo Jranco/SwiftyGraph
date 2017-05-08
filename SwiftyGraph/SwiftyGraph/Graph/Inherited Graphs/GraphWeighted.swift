@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GraphWeighted: GraphBase, GraphWeightedProtocol
+public class GraphWeighted<VerticeType>: GraphBase<VerticeType>, GraphWeightedProtocol where VerticeType: Hashable, VerticeType: Comparable
 {
-    public func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, weight: Weight<Any>)
+    public func addEdge(verticeA: VerticeType, verticeB: VerticeType, weight: Weight<Any>)
     {
         addEdge(verticeA: verticeA, verticeB: verticeB, direction: self.direction, weight: weight)
     }

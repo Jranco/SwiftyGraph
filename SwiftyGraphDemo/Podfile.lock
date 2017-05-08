@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyGraph (0.2)
+  - SwiftyGraph (0.3)
 
 DEPENDENCIES:
   - SwiftyGraph (from `../SwiftyGraph`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../SwiftyGraph
 
 SPEC CHECKSUMS:
-  SwiftyGraph: de1e66dffb44df3153f90bc6a83a994fe5103209
+  SwiftyGraph: eb60ec4a7d264f258a85668be7561c49fc70d470
 
 PODFILE CHECKSUM: 4f17db5776f0f6b78e51ab733fa766f61735cc03
 
-COCOAPODS: 1.2.0.rc.1
+COCOAPODS: 1.2.0

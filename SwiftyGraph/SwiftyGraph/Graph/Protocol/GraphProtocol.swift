@@ -10,11 +10,13 @@ import Foundation
 
 protocol GraphProtocol: class
 {
+    associatedtype VerticeType: Hashable, Comparable
+    
     // MARK: - Properties -
 
-    var adjacency: [String: [String:EdgeProtocol]] {set get}
-    var verticeDictionary: [String: VerticeProtocol] {set get}
-    var verticeArray: [VerticeProtocol] {get}
+    var adjacency: [VerticeType: [VerticeType:EdgeProtocol]] {set get}
+    var verticeDictionary: [VerticeType: VerticeType] {set get}
+    var verticeArray: [VerticeType] {get}
     var direction: DirectionType {set get}
     
     // MARK: - Init method -
@@ -23,15 +25,16 @@ protocol GraphProtocol: class
     
     // MARK: - Functions with default implementation -
 
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType)
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, edge: Edge)
-    func addVertice(vertice: VerticeProtocol)
-    
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, direction: DirectionType, weight: Weight<Any>)
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, direction: DirectionType)
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, edge: Edge)
+    func addVertice(vertice: VerticeType)
+    func addVertices(vertices: [VerticeType])
+
     // MARK: - Functions to be implemented by class conforming to this protocol -
     
-    func existsEdge(from verticeA: VerticeProtocol,to  verticeB: VerticeProtocol) -> Bool
-    func existsVertice(vertice: VerticeProtocol) -> Bool
+    func existsEdge(from verticeA: VerticeType,to  verticeB: VerticeType) -> Bool
+    func existsVertice(vertice: VerticeType) -> Bool
     
     // MARK: - Adjacency -
     
@@ -44,54 +47,43 @@ extension GraphProtocol
 {
     // MARK: - Add Edges & Vertices -
     
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType, weight: Weight<Any>)
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, direction: DirectionType, weight: Weight<Any>)
     {
         let edge = Edge.weighted(direction, weight)
         
         addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjacency[verticeB.identifier!]?[verticeA.identifier!] == nil)
+        if(direction == .undirected && adjacency[verticeB]?[verticeA] == nil)
         {
             addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction, weight: weight)
         }
     }
     
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, direction: DirectionType)
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, direction: DirectionType)
     {
         let edge = Edge.unweighted(direction)
         
         addEdge(verticeA: verticeA, verticeB: verticeB, edge: edge)
         
-        if(direction == .undirected && adjacency[verticeB.identifier!]?[verticeA.identifier!] == nil)
+        if(direction == .undirected && adjacency[verticeB]?[verticeA] == nil)
         {
             addEdge(verticeA: verticeB, verticeB: verticeA, direction: direction)
         }
     }
     
-    func addEdge(verticeA: VerticeProtocol, verticeB: VerticeProtocol, edge: Edge)
+    func addEdge(verticeA: VerticeType, verticeB: VerticeType, edge: Edge)
     {
         // Add edge
-        var nearbyDictionary: [String: EdgeProtocol] = [:]
+        var nearbyDictionary: [VerticeType: EdgeProtocol] = [:]
         
-        if(adjacency[verticeA.identifier!] != nil)
+        if(adjacency[verticeA] != nil)
         {
-            nearbyDictionary = adjacency[verticeA.identifier!]!
+            nearbyDictionary = adjacency[verticeA]!
             
         }
         
-        nearbyDictionary[verticeB.identifier!]  = edge
-        adjacency[verticeA.identifier!]          = nearbyDictionary
-        
-        // Add vertice
-        self.addVertice(vertice: verticeA)
-        self.addVertice(vertice: verticeB)
-        
+        nearbyDictionary[verticeB]  = edge
+        adjacency[verticeA]          = nearbyDictionary
     }
-    
-    func addVertice(vertice: VerticeProtocol)
-    {
-        verticeDictionary[vertice.identifier!] = vertice
-    }
-
 }
 
